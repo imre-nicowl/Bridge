@@ -1,185 +1,195 @@
-# BRIDGE SZABÁLYOK
-*(SAYC nyomán)*
+# **BRIDGE SZABÁLYOK**
 
-**Szerzők:** Jánoki Imre és Uhrin Ákos
-**Verzió:** r2.0
+*(SAYC nyomán)* **Szerzők:** Jánoki Imre és Uhrin Ákos
+
+**Verzió:** r2.1 (no rev)
+
 **Eredeti:** 2023.07.03. (r1.0)
+
 **Utolsó revízió (r1.8):** 2025.09.16.
-**Átszerkesztve és bővítve:** 2026.05.07. (r2.0)
 
----
+**Átszerkesztve és bővítve:** 2026.05.11. (r2.1)
 
-## Tartalomjegyzék
-- [Bridge alapok](#bridge-alapok)
-  - [Pontok (HCP – High Card Points)](#pontok-hcp--high-card-points)
-  - [Eloszlási (többlet) pontok](#eloszlási-többlet-pontok)
-  - [Színek rangsora](#színek-rangsora)
-  - [Nemes szín preferencia (segítőként)](#nemes-szín-preferencia-segítőként)
-  - [Licitálási szintek (a partnerség két kezében összesen)](#licitálási-szintek-a-partnerség-két-kezében-összesen)
-- [Az Induló szabályai (az első, aki nem passzol)](#az-induló-szabályai-az-első-aki-nem-passzol)
-  - [Első licit](#első-licit)
-  - [Általános irányelvek](#általános-irányelvek)
-  - [Induló licitek – részletes táblázat](#induló-licitek--részletes-táblázat)
-  - [Az induló viszontválasza (miután a partner válaszolt – nem passzal)](#az-induló-viszontválasza-miután-a-partner-válaszolt--nem-passzal)
-- [A Segítő szabályai (miután az Induló megnyitotta a licitet)](#a-segítő-szabályai-miután-az-induló-megnyitotta-a-licitet)
-  - [A) Első válasz – ha az ellenfél NEM szólt közbe](#a-első-válasz--ha-az-ellenfél-nem-szólt-közbe)
-  - [B) Első válasz – ha az ellenfél KÖZBESZÓLT](#b-első-válasz--ha-az-ellenfél-közbeszólt)
-- [Válaszok az 1NT vagy 2NT indulásra](#válaszok-az-1nt-vagy-2nt-indulásra)
-  - [A) Segítő válaszai 1NT indulásra (közbeszólás nélkül)](#a-segítő-válaszai-1nt-indulásra-közbeszólás-nélkül)
-  - [B) Válaszok 1NT indulásra, ha az ellenfél közbeszólt](#b-válaszok-1nt-indulásra-ha-az-ellenfél-közbeszólt)
-- [Válasz a gyenge 2-esre](#válasz-a-gyenge-2-esre)
-  - [A) Válaszok közbeszólás nélkül](#a-válaszok-közbeszólás-nélkül)
-  - [B) Válaszok közbeszólás esetén – Lebensohl gyenge 2-es ellen](#b-válaszok-közbeszólás-esetén--lebensohl-gyenge-2-es-ellen)
-- [Erős 2 treff indulás](#erős-2-treff-indulás)
-  - [Válaszok a 2♣ indulásra (2♣ → ?)](#válaszok-a-2-indulásra-2--)
-  - [Az induló viszontválaszai a 2♦ negatív válaszra (2♣ → 2♦ → ?)](#az-induló-viszontválaszai-a-2-negatív-válaszra-2--2--)
-  - [Az induló viszontválaszai a 2♥ dupla negatív válaszra (2♣ → 2♥ → ?)](#az-induló-viszontválaszai-a-2-dupla-negatív-válaszra-2--2--)
-  - [Egyéb megfontolások az erős 2 treff után](#egyéb-megfontolások-az-erős-2-treff-után)
-- [Slamkereső konvenciók](#slamkereső-konvenciók)
-  - [(4NT) Kickback Roman Key Card Blackwood (RKC) ászkérdés – 1430](#4nt-kickback-roman-key-card-blackwood-rkc-ászkérdés--1430)
-  - [Exclusion Blackwood](#exclusion-blackwood)
-  - [Void válaszok 1430-ban](#void-válaszok-1430-ban)
-  - [5NT Blackwood királykérdés](#5nt-blackwood-királykérdés)
-  - [Adu dáma megkérdezése RKC-ra érkezett válasz után](#adu-dáma-megkérdezése-rkc-ra-érkezett-válasz-után)
-  - [Gerber (szanra adott) ász- és királykérdés](#gerber-szanra-adott-ász--és-királykérdés)
-  - [Ha közbeszóltak az ászkérdésre – DEPO](#ha-közbeszóltak-az-ászkérdésre--depo)
-- [Overcallok és kompetitív licitek](#overcallok-és-kompetitív-licitek)
-  - [Áttekintő pont-diagram](#áttekintő-pont-diagram)
-  - [Szín bemondása (overcall)](#szín-bemondása-overcall)
-  - [Take-out Double](#take-out-double)
-  - [1NT és 2NT overcall](#1nt-és-2nt-overcall)
-  - [Power double](#power-double)
-  - [Take-out Double 4-es magasan](#take-out-double-4-es-magasan)
-  - [Újranyitó kontra (Reopening Double)](#újranyitó-kontra-reopening-double)
-  - [Support Double](#support-double)
-  - [Two-suited Double](#two-suited-double)
-  - [Negatív kontra (overcaller partnereként)](#negatív-kontra-overcaller-partnereként)
-  - [Rekontra (erős)](#rekontra-erős)
-  - [Gyenge 2-re adott takeout double után – Lebensohl relay](#gyenge-2-re-adott-takeout-double-után--lebensohl-relay)
-  - [Michael's Cue bid](#michaels-cue-bid)
-  - [Unusual 2NT](#unusual-2nt)
-  - [Védekezés 1NT indulás ellen – Cappelletti](#védekezés-1nt-indulás-ellen--cappelletti)
-- [Egyebek – egyéb konvenciók](#egyebek--egyéb-konvenciók)
-  - [The Rule of 20](#the-rule-of-20)
-  - [The Rule of 44](#the-rule-of-44)
-- [Ellenjáték (jelzések)](#ellenjáték-jelzések)
-  - [Attitude (upside-down)](#attitude-upside-down)
-  - [Count (upside-down)](#count-upside-down)
-  - [Suit-preference](#suit-preference)
-- [Slem- és game-erő megbeszélése](#slem--és-game-erő-megbeszélése)
-  - [The Law of Total Tricks](#the-law-of-total-tricks)
-  - [Splinter bids](#splinter-bids)
-  - [Fourth suit forcing (Negyedik szín forcing)](#fourth-suit-forcing-negyedik-szín-forcing)
-- [Pontozás](#pontozás)
-  - [Sebezhetőség (vulnerability) – licitkezdő szerint](#sebezhetőség-vulnerability--licitkezdő-szerint)
-  - [Ütésenkénti pontok](#ütésenkénti-pontok)
-  - [Bónuszok teljesítésért (mans / bell)](#bónuszok-teljesítésért-mans--bell)
-  - [Bukás ütésenként (mans / bell)](#bukás-ütésenként-mans--bell)
-  - [Kontra hatása](#kontra-hatása)
-  - [Rekontra hatása](#rekontra-hatása)
-- [Játékmenet alapok](#játékmenet-alapok)
-  - [Impassz (finesse)](#impassz-finesse)
-  - [Hogyan nyitunk](#hogyan-nyitunk)
-  - [Osztás és lejátszás](#osztás-és-lejátszás)
-- [TODO – kidolgozandó és olvasnivalók](#todo--kidolgozandó-és-olvasnivalók)
-  - [Alapok és értékelés](#alapok-és-értékelés)
-  - [Lebensohl és kapcsolódó konvenciók](#lebensohl-és-kapcsolódó-konvenciók)
-  - [Felvevő technikák (declarer play)](#felvevő-technikák-declarer-play)
-  - [További olvasnivalók](#további-olvasnivalók)
-  - [Cue bidek és slem-keresés](#cue-bidek-és-slem-keresés)
-  - [BBO referencia (AdvGIB 2/1)](#bbo-referencia-advgib-21)
-  - [Bergen raises és Unusual elleni védekezés](#bergen-raises-és-unusual-elleni-védekezés)
-  - [Egyéb feljegyzés](#egyéb-feljegyzés)
+## **Tartalomjegyzék**
 
----
+* [Bridge alapok](#bookmark=id.n0phz6pdw7fy)  
+  * [Pontok (HCP – High Card Points)](#bookmark=id.thmvbrtslsso)  
+  * [Eloszlási (többlet) pontok](#bookmark=id.88nogfqqbbbm)  
+  * [Színek rangsora](#bookmark=id.w4imte11gaau)  
+  * [Nemes szín preferencia (segítőként)](#bookmark=id.1azvv3dq1sj0)  
+  * [Licitálási szintek (a partnerség két kezében összesen)](#bookmark=id.q36humcrp89a)  
+* [Az Induló szabályai (az első, aki nem passzol)](#bookmark=id.esezmg189y9b)  
+  * [Első licit](#bookmark=id.chsf5hfz3ppb)  
+  * [Általános irányelvek](#bookmark=id.pvxlhduuk7a0)  
+  * [Induló licitek – részletes táblázat](#bookmark=id.i7apyukvnnd2)  
+  * [Az induló viszontválasza (miután a partner válaszolt – nem passzal)](#bookmark=id.1bapnznxwpzi)  
+* [A Segítő szabályai (miután az Induló megnyitotta a licitet)](#bookmark=id.opkkw7gqmi)  
+  * [A) Első válasz – ha az ellenfél NEM szólt közbe](#bookmark=id.f3xuxnv9xtdz)  
+  * [B) Első válasz – ha az ellenfél KÖZBESZÓLT](#bookmark=id.9w7z7d7vtec0)  
+* [Válaszok az 1NT vagy 2NT indulásra](#bookmark=id.65yc2rlqugs)  
+  * [A) Segítő válaszai 1NT indulásra (közbeszólás nélkül)](#bookmark=id.i2d8w5vs2fbc)  
+  * [B) Válaszok 1NT indulásra, ha az ellenfél közbeszólt](#bookmark=id.j24ozktnslbm)  
+* [Válasz a gyenge 2-esre](#bookmark=id.gz9ojx93hv19)  
+  * [A) Válaszok közbeszólás nélkül](#bookmark=id.jrkb0judsgcz)  
+  * [B) Válaszok közbeszólás esetén – Lebensohl gyenge 2-es ellen](#bookmark=id.rl351c78pijt)  
+* [Erős 2 treff indulás](#bookmark=id.5beb73lvtho6)  
+  * [Válaszok a 2♣ indulásra (2♣ → ?)](#bookmark=id.e6yxcvtogp0j)  
+  * [Az induló viszontválaszai a 2♦ negatív válaszra (2♣ → 2♦ → ?)](#bookmark=id.oucajcoxolx1)  
+  * [Az induló viszontválaszai a 2♥ dupla negatív válaszra (2♣ → 2♥ → ?)](#bookmark=id.uid393b9vmb9)  
+  * [Egyéb megfontolások az erős 2 treff után](#bookmark=id.ig34ndcvp3d)  
+* [2/1 Game Forcing és Reverse Bidding](#bookmark=id.4m8tq4q72vub)  
+* [Slamkereső konvenciók](#bookmark=id.u2knuk8ayt5e)  
+  * [(4NT) Kickback Roman Key Card Blackwood (RKC) ászkérdés – 1430](#bookmark=id.h58wg9y3x37v)  
+  * [Exclusion Blackwood](#bookmark=id.gxjeangsaplh)  
+  * [Void válaszok 1430-ban](#bookmark=id.nd9m85p5jc2z)  
+  * [5NT Specific King Ask (Királykérdés)](#bookmark=id.qs23mjyjvmtm)  
+  * [Adu dáma megkérdezése RKC-ra érkezett válasz után](#bookmark=id.vzlal95ievne)  
+  * [Gerber (szanra adott) ász- és királykérdés](#bookmark=id.e71d00204gfu)  
+  * [Ha közbeszóltak az ászkérdésre – DEPO](#bookmark=id.2zyoyd7e7mya)  
+* [Overcallok és kompetitív licitek](#bookmark=id.kcrha3jvfruj)  
+  * [Áttekintő pont-diagram](#bookmark=id.isrgjwp1s0ol)  
+  * [Szín bemondása (overcall)](#bookmark=id.mrj3j8e8xz2g)  
+  * [Take-out Double](#bookmark=id.56n6fqyd5d55)  
+  * [1NT és 2NT overcall](#bookmark=id.cqqv4d1j3uq2)  
+  * [Power double](#bookmark=id.7vyeclczgnum)  
+  * [Take-out Double 4-es magasan](#bookmark=id.js8ncbxx5bsb)  
+  * [Újranyitó kontra (Reopening Double)](#bookmark=id.i2ap16dzb55q)  
+  * [Support Double](#bookmark=id.yebpll9y48kf)  
+  * [Two-suited Double](#bookmark=id.98za0nilnpvf)  
+  * [Negatív kontra (overcaller partnereként)](#bookmark=id.ixq02ux1fiw6)  
+  * [Rekontra (erős)](#bookmark=id.j541vlkscu5g)  
+  * [Gyenge 2-re adott takeout double után – Lebensohl relay](#bookmark=id.da5307tnzqek)  
+  * [Michael's Cue bid](#bookmark=id.e05ulwwoa97t)  
+  * [Unusual 2NT](#bookmark=id.n1j9mh24j4cl)  
+  * [Védekezés 1NT indulás ellen – Cappelletti](#bookmark=id.i3twuf6aqpey)  
+* [Egyebek – egyéb konvenciók](#bookmark=id.n82afe4d3k6c)  
+  * [The Rule of 20](#bookmark=id.i9um2b2lqop2)  
+  * [The Rule of 44](#bookmark=id.v6glsg9tyo39)  
+* [Ellenjáték (jelzések)](#bookmark=id.fvil44kvhj2u)  
+  * [Attitude (upside-down)](#bookmark=id.6oq84t4jry2n)  
+  * [Count (upside-down)](#bookmark=id.s07egjx5iqfh)  
+  * [Suit-preference](#bookmark=id.yeyejpe4d2jm)  
+* [Slem- és game-erő megbeszélése](#bookmark=id.2nrbgclenvet)  
+  * [The Law of Total Tricks](#bookmark=id.t7q80nj88fng)  
+  * [Bergen Raises](#bookmark=id.c5m4ipw3dszs)  
+  * [Drury Konvenció (Passzolt segítő)](#bookmark=id.e695jsr7kmzx)  
+  * [Western Cue bid](#bookmark=id.k5a9y611c0jx)  
+  * [Splinter bids](#bookmark=id.sqk2vya2ud9)  
+  * [Fourth suit forcing (Negyedik szín forcing)](#bookmark=id.t3kk5wggmygw)  
+* [Pontozás](#bookmark=id.1mrkgjzpz9e)  
+  * [Sebezhetőség (vulnerability) – licitkezdő szerint](#bookmark=id.25lb32y0jqnq)  
+  * [Ütésenkénti pontok](#bookmark=id.a7zikf65p3iy)  
+  * [Bónuszok teljesítésért (mans / bell)](#bookmark=id.e7uj3z1cvnoz)  
+  * [Bukás ütésenként (mans / bell)](#bookmark=id.gu4as2la75gu)  
+  * [Kontra hatása](#bookmark=id.4vr4hq3vw2gt)  
+  * [Rekontra hatása](#bookmark=id.caazetr4rtd0)  
+* [Játékmenet alapok](#bookmark=id.41ftm7e4jg86)  
+  * [Impassz (finesse)](#bookmark=id.ypvu3jgdc1us)  
+  * [Hogyan nyitunk](#bookmark=id.q3yjyv7c7ubb)  
+  * [Osztás és lejátszás](#bookmark=id.vqfhpfybjpn1)  
+* [TODO – kidolgozandó és olvasnivalók](#bookmark=id.ihwy5egtcgzq)
 
-## Bridge alapok
+## **Bridge alapok**
+
 A bridge négy játékos kártyajátéka, ahol egymással szemben ülő játékosok együttműködnek párokban. Egy színből összesen 13 lap van.
 
-### Pontok (HCP – High Card Points)
+### **Pontok (HCP – High Card Points)**
+
 A figura pontok (HCP) az alapja a kéz erejének értékelésekor:
 
 | Ász (A) | Király (K) | Dáma (D / Q) | Bubi (J / Jumbó) |
-|---|---|---|---|
+| :---- | :---- | :---- | :---- |
 | 4 pont | 3 pont | 2 pont | 1 pont |
 
-A pakli összes figura pontja: 40.
+A pakli összes figura pontja: 40\.
 
-### Eloszlási (többlet) pontok
-- Színhiány (void): 3 pont (ha az ellenfél színéből: 5)
-- Egyke lap (singleton): 2 pont (ha az ellenfél színéből: 3)
-- Doubleton (két lap egy színből): 1 pont
-- Hosszú adu szín: 8 lap fölött minden további lapért +1 pont
-- Hosszú nem adu szín: értékelni kell, jó lehet benne eldobni a kiadókat. Az 5., 6., 7., stb. hosszért egy-egy többletpont, ha van hozzá honor.
-- Védtelen honorok: −1 pont a K, Q és J esetében (önmagában álló kiraly, dáma vagy bubi).
+### **Eloszlási (többlet) pontok**
 
-> ℹ️ További olvasnivaló: Hand evaluation – Wikipedia
+* Színhiány (void): 3 pont (ha az ellenfél színéből: 5\)  
+* Egyke lap (singleton): 2 pont (ha az ellenfél színéből: 3\)  
+* Doubleton (két lap egy színből): 1 pont  
+* Hosszú adu szín: 8 lap fölött minden további lapért \+1 pont  
+* Hosszú nem adu szín: értékelni kell, jó lehet benne eldobni a kiadókat. Az 5., 6., 7., stb. hosszért egy-egy többletpont, ha van hozzá honor.  
+* Védtelen honorok: −1 pont a K, Q és J esetében (önmagában álló kiraly, dáma vagy bubi).
 
-### Színek rangsora
-Nem nemes: ♣ Treff → ♦ Káró < Nemes: ♥ Kőr → ♠ Pikk < Szan (NT)
+ℹ️ További olvasnivaló: Hand evaluation – Wikipedia
 
-### Nemes szín preferencia (segítőként)
-- 4 kőr és 4 pikk → kőrt mond
-- 5 kőr és 5 pikk → pikket mond
-- 4 kőr és 5 pikk → pikket mond (a hosszabbat)
-- 5 kőr és 4 pikk → kőrt mond (a hosszabbat)
+### **Színek rangsora**
 
-### Licitálási szintek (a partnerség két kezében összesen)
+Nem nemes: ♣ Treff → ♦ Káró \< Nemes: ♥ Kőr → ♠ Pikk \< Szan (NT)
+
+### **Nemes szín preferencia (segítőként)**
+
+* 4 kőr és 4 pikk → kőrt mond  
+* 5 kőr és 5 pikk → pikket mond  
+* 4 kőr és 5 pikk → pikket mond (a hosszabbat)  
+* 5 kőr és 4 pikk → kőrt mond (a hosszabbat)
+
+### **Licitálási szintek (a partnerség két kezében összesen)**
+
 A két kéz együttes pontja és aduszámának függvényében:
 
 | Vállalás | Pontok (összesen) | Egyéb feltétel |
-|---|---|---|
-| Színjáték (1, 2 vagy 3) | 18–23 pont | min. 8 adu (lehet 7, ha nincs fit) |
+| :---- | :---- | :---- |
+| Színjáték (1, 2 vagy 3\) | 18–23 pont | min. 8 adu (lehet 7, ha nincs fit) |
 | Szan (1NT vagy 2NT) | 20–23 pont | lehetőleg nincs 8 a nemes színekből |
 | Nemes gém (4♥, 4♠) | 24+ pont | min. 8 adu |
 | Nem nemes gém (5♣, 5♦) | 26+ pont | min. 8 adu |
 | Szan gém (3NT) | 24+ pont | lehetőleg nincs 8 egy színből sem |
-| Kis slem (6 bármiből) | 32–33+ pont (NT: 33+) | min. 4 az 5 kulcslapból* |
-| Nagy slem (7 bármiből) | 35–37+ pont (NT: 37+) | mind 4 ász + adu király + más király/hosszú szín |
+| Kis slem (6 bármiből) | 32–33+ pont (NT: 33+) | min. 4 az 5 kulcslapból\* |
+| Nagy slem (7 bármiből) | 35–37+ pont (NT: 37+) | mind 4 ász \+ adu király \+ más király/hosszú szín |
 
 * Kulcslapok (key cardok): a 4 ász és az adu király.
 
-> 💡 **Mindig értékeld a lapot!** Szokatlan eloszlás, sok adu, erős mellékszín vagy színhiány esetén kevesebb pont is elég lehet.
+💡 **Mindig értékeld a lapot\!** Szokatlan eloszlás, sok adu, erős mellékszín vagy színhiány esetén kevesebb pont is elég lehet.
 
----
+## **Az Induló szabályai (az első, aki nem passzol)**
 
-## Az Induló szabályai (az első, aki nem passzol)
-> 💡 Indulóként, ha 16 pontnál kevesebbed van, ne emelj második szintre, kivéve ha:
-> - A partner színét emeled (1♦ → 1♠ → 2♠).
-> - A saját extrahosszú (6+) színedet ismétled magasabb szinten.
-> - Második, alacsonyabb rangú színt mutatsz be (4+ lappal): 1♦ → 1♠ → 2♣.
+💡 Indulóként, ha 16 pontnál kevesebbed van, ne emelj második szintre, kivéve ha:
 
-### Első licit
-Mindig hívj 1-es színt, ha legalább 12 pontod van. Nyithatsz kevesebb pontból is (10–12), ha hosszú színed van vagy kedvező az eloszlás (lásd többletpontok, Rule of 20).
+* A partner színét emeled (1♦ → 1♠ → 2♠).  
+* A saját extrahosszú (6+) színedet ismétled magasabb szinten.  
+* Második, alacsonyabb rangú színt mutatsz be (4+ lappal): 1♦ → 1♠ → 2♣.
 
-### Általános irányelvek
-- Ha 5-ös nemes színed van, azzal indulsz.
-- Ha 5+ van mindkét nemesből, pikkel indulsz (a második licitre kőr bemondásával jelzed).
-- Ha 4-4 nem nemes, káróval indulsz (ha van 3 kárónál is több).
-- Ha 3-3 nem nemes, treffel indulsz (convenient minor).
+### **Első licit**
 
-### Induló licitek – részletes táblázat
+Mindig hívj 1-es színt, ha legalább 12 pontod van. Nyithatsz kevesebb pontból is (10–12), ha hosszú színed van vagy kedvező az eloszlás.
+
+**\[REVÍZIÓ\]** **The Rule of 20:** Számold össze a HCP pontjaidat, és add hozzá a két leghosszabb színed hosszát. Ha az összeg legalább 20, **és 1-es szintre vonatkozik**, indulj el. (Példa: 11 HCP, 5 kőr és 4 treff → 11 \+ 5 \+ 4 \= 20, indulj 1♥-rel). A Rule of 20-at ne használd gyenge 2-es indoklására\!
+
+### **Általános irányelvek**
+
+* Ha 5-ös nemes színed van, azzal indulsz.  
+* Ha 5+ van mindkét nemesből, pikkel indulsz (a második licitre kőr bemondásával jelzed).  
+* Ha 4-4 nem nemes, káróval indulsz (ha van 3 kárónál is több).  
+* Ha 3-3 nem nemes, treffel indulsz (convenient minor).
+
+### **Induló licitek – részletes táblázat**
 
 | Licit | Jelentés |
-|---|---|
+| :---- | :---- |
 | 1♣ vagy 1♦ | 12–20 pont és minimum 3 lap a színben. A hosszabbal nyiss, ha azonosak, lásd fent. |
 | 1♥ vagy 1♠ | 12–20 pont és minimum 5 lap a színben. A hosszabbal nyiss; azonos hossznál pikkel (kizárva az ellenfelet). |
 | 1NT | Pontosan 15–17 pont és egyenletes eloszlás (min. 2 lap minden színből). Eloszlások: 4-3-3-3, 4-4-3-2, 5-3-3-2. |
 | 1 valami → valami → 1NT (újrahívás) | 11–14 HCP. |
 | 1 valami → valami → 2NT (ugrás) | 18–19 HCP, balanced. |
-| Stop 2NT | 20–21 HCP, balanced. Stayman + transfer érvényben. |
-| Stop 2♣ (!) | 19+ pontot ígér. A partnernek kötelező válaszolnia! Lásd: Erős két treff indulás. |
-| Stop 2♣ → válasz → 2NT | 22–23 HCP, balanced. Stayman + transfer érvényben. |
+| Stop 2NT | 20–21 HCP, balanced. Stayman \+ transfer érvényben. |
+| Stop 2♣ (\!) | 19+ pontot ígér. A partnernek kötelező válaszolnia\! Lásd: Erős két treff indulás. |
+| Stop 2♣ → válasz → 2NT | 22–23 HCP, balanced. Stayman \+ transfer érvényben. |
 | Stop 3NT | Pontosan 24–26 pont és egyenletes eloszlás. |
-| Gyenge 2-es (Stop 2♦, 2♥, 2♠) | 6–10 pont, erős (min. 2 figura) pontosan 6-lapos adu színnel. |
+| **\[REVÍZIÓ\]** Gyenge 2-es (Stop 2♦, 2♥, 2♠) | Pontosan 6-lapos adu színnel. Sebezhetőségtől függ: **Kedvezőtlen** (mi bellben, ők mansban) \= **6–10 pont**, **Kedvező** (mi mansban, ők bellben) \= **5–11 pont**, agresszívebb. |
 | Gyenge 3-as (Stop 3♣, 3♦, 3♥, 3♠) | 6–11 pont, erős (min. 2 figura) pontosan 7-lapos adu színnel. |
 
-> ℹ️ **Megjegyzés a gyenge 2-esről:** A SAYC eredetileg 5–11 HCP-t engedne meg, de ez ütközik a Rule of 20-szal: ha 11 ponttal van 6 lapod, akkor a harmadik leghosszabb szín 3+ lapos, és 11+6+3=20 → indulhatnál 1-essel is. Érdemes a partnerrel megbeszélni, hogy 11 ponttal gyenge 2-est vagy 1-es nyitást használtok-e (lásd: TODO szakasz).
+**\[REVÍZIÓ\]** **Fontos megjegyzés a gyenge 2-esről és a Rule of 20-ról:** A Rule of 20 (HCP \+ két leghosszabb szín hossza ≥ 20\) kizárólag az **1-es szintű nyitásokra** vonatkozik\! A gyenge 2-es tisztán preempt jellegű licit. **Mikor NE nyiss gyenge 2-est:**
 
-### Az induló viszontválasza (miután a partner válaszolt – nem passzal)
+* Ha megvan a Rule of 20-ad\! (Például 11 HCP, 6-os pikk, 3-as treff \= 11+6+3=20. Ezzel 1♠-t kell nyitni, nem 2♠-t\!)  
+* Ha a kezedben van "két sima ász" (two bare aces), például ♠A és ♣A egy gyenge, 6 lapos kőr mellett.  
+* Ha van egy "erős holdingod" egy külső színben (pl. egy 4 lapos KQJx mellékszín). A gyenge 2-es erejének a saját, megnevezett hosszú színéből kell jönnie, hogy a partner megfelelően tudjon dönteni az áldozásról vagy a gémről.
+
+### **Az induló viszontválasza (miután a partner válaszolt – nem passzal)**
 
 | Licit | Jelentés |
-|---|---|
+| :---- | :---- |
 | Új szín (1♣ → 1♥ → 1♠) | Legalább 4 lap és 13–20 pont. |
 | Első szín emelése (1♣ → 1♥ → 2♣) | Hosszabb szín (nemes: 6+, nem nemes: 5+) és 12–16 pont. |
 | Ugrás saját színben (1♣ → 1♥ → 3♣) | Erősebb kéz: 17–20 pont. |
@@ -188,156 +198,131 @@ Mindig hívj 1-es színt, ha legalább 12 pontod van. Nyithatsz kevesebb pontbó
 | 1NT (1♣ → 1♥ → 1NT) | 12–14 pont, a partner színében nincs 4 lap, és nincs másik 4-lap színed az első szinten. |
 | 2NT (újra) | Itt már tudjuk, hogy megvan a gémre a pont; kérdezzük, hogy a partnernek van-e stoppere, vagy elkezdünk tapogatózni slem felé. |
 
----
+## **A Segítő szabályai (miután az Induló megnyitotta a licitet)**
 
-## A Segítő szabályai (miután az Induló megnyitotta a licitet)
 A Segítő (responder) az Induló partnere. Általában akkor válaszol, ha legalább 6 pontja van.
 
-> 💡 **Általános irányelvek:**
-> - Nem nemes nyitásra (1♣/1♦), ha 4+ lapod van nemes színből, mindig azzal válaszolj. Ha mindkét nemesből 4 lapod van, kőrrel.
-> - Nemes nyitásra (1♥/1♠), ha 3+ lapod van a partner színéből, emelj egy szinttel (1♠ → 2♠), hogy megerősítsd a 8 lapos fitet.
-> - Ha 10 pontnál kevesebbed van, ne emelj 2-es szintre, kivéve ha a partner színét emeled, vagy a saját extrahosszú színedre licitálsz.
-> - Egyes furcsa eloszlásnál 1NT-t kell mondani, hogy alacsony maradjon a licit. Ezt az 1NT-t „nem illik” elpasszolni, kivéve ha szant akartok játszani és nincs benne game.
+💡 **Általános irányelvek:**
 
-### A) Első válasz – ha az ellenfél NEM szólt közbe
+* Nem nemes nyitásra (1♣/1♦), ha 4+ lapod van nemes színből, mindig azzal válaszolj. Ha mindkét nemesből 4 lapod van, kőrrel.  
+* Nemes nyitásra (1♥/1♠), ha 3+ lapod van a partner színéből, emelj egy szinttel (1♠ → 2♠), hogy megerősítsd a 8 lapos fitet. (De lásd: Bergen raises).  
+* Ha 10 pontnál kevesebbed van, ne emelj 2-es szintre, kivéve ha a partner színét emeled, vagy a saját extrahosszú színedre licitálsz.  
+* Egyes furcsa eloszlásnál 1NT-t kell mondani, hogy alacsony maradjon a licit.
+
+**\[REVÍZIÓ\]** **Semi-forcing 1NT (1M \- 1NT)** Az 1♥ vagy 1♠ nyitásra adott 1NT válaszunk (6–12 HCP) **Semi-forcing**. A nyitó elméletileg passzolhatja, de **csak és kizárólag** akkor, ha egy teljesen lapos (balanced), egyenletes minimuma van (12-13 HCP). Minden más, elosztásos vagy erősebb kézzel a nyitónak licitálnia kell.
+
+### **A) Első válasz – ha az ellenfél NEM szólt közbe**
+
 Ezek a válaszok érvényesek tiszta licitsorozatban (Induló licitált, ellenfél passzolt vagy még nem volt szava).
 
-#### Áttekintő táblázat
-| Licit | Jelentés |
-|---|---|
-| 1. szinten új szín (1♣ → 1♥) | 4+ lap a színből és 6–16 pont. |
-| 2. szinten új szín, ugrás nélkül (1♥ → 2♦) | 4+ lap a színből és 10–16 pont. |
-| Ugrás új színben / Jump-shift (1♦ → 2♥) | Nagyon erős: 17+ pont és 4+ lap a színből. |
-| Induló nemes színének emelése 2-es szinten (1♥ → 2♥) | 3+ lap a színből és 6–9 pont. |
-| Stop 3 nemes – Induló színének emelése (1♥ → 3♥) | 10–12 pont és 3+ lap a színből. |
-| 1NT (1♠ → 1NT) | 6–9 pont, nincs partner színében elég lap, nem tudsz mást ígérni 1-es szinten. Egyenlő eloszlású erősebb kéz esetén lehet ugrással jelezni. Elvileg fogás az ellenfél színéből. |
-| 1NT → 4NT | Kvantitatív invitálás 6NT-re, ha a pointrange tetején van az induló. |
-| 1 színre 4 szín | Kvantitatív invitálás 6-ra, ugyanúgy. |
-| 1 színre 5 szín | Kis vagy nagy slem bemondása, pointrange szerint. |
+#### **Áttekintő táblázat**
 
-#### Inverted minor (csak nem nemes nyitásra)
-> ⚠️ Csak akkor érvényes, ha az ellenfél NEM szólt közbe!
+| Licit | Jelentés |
+| :---- | :---- |
+| 1\. szinten új szín (1♣ → 1♥) | 4+ lap a színből és 6–16 pont. |
+| 2\. szinten új szín, ugrás nélkül (1♥ → 2♦) | 4+ lap a színből és 10–16 pont. *(Lásd: 2/1 Game Forcing)* |
+| Ugrás új színben / Jump-shift (1♦ → 2♥) | Nagyon erős: 17+ pont és 4+ lap a színből. |
+| Induló nemes színének emelése 2-es szinten (1♥ → 2♥) | 3+ lap a színből (nem 4\!) és 6–9 pont. |
+| Stop 3 nemes – Induló színének emelése (1♥ → 3♥) | **\[REVÍZIÓ\]** Preemptív zárás\! (Lásd: Bergen Raises). 0-5 pont, 4 lapos adu. |
+| 1NT (1♠ → 1NT) | 6–12 pont (Semi-forcing). Nincs partner színében elég lap. |
+
+#### **Inverted minor (csak nem nemes nyitásra)**
+
+⚠️ Csak akkor érvényes, ha az ellenfél NEM szólt közbe\!
 
 Az „inverted” lényege, hogy a sima emelés erős, az ugró emelés gyenge (preempt) – fordítva a természetes logikával:
 
 | Licit | Jelentés |
-|---|---|
+| :---- | :---- |
 | Erős sima emelés (1♣ → 2♣ vagy 1♦ → 2♦) | 10+ pont, legalább 4 lap támogatás, nincs 4 lapos nemes szín. Egy körig forcing. |
 | Gyenge ugró emelés (1♣ → 3♣ vagy 1♦ → 3♦) | 0–6 pont, legalább 5 lap támogatás, nincs 4 lapos nemes szín. Preemptív. |
 
-*Eredeti angol nyelvű referenciaképek:*
-![1. ábra – „The Strong Raise”: 10+ pont, 4+ adu, nincs 4-es nemes.](helyorzo_kep_1.png)
 1. ábra – „The Strong Raise”: 10+ pont, 4+ adu, nincs 4-es nemes.
 
-![2. ábra – „The Weak Raise”: 0–6 pont, 5+ adu, nincs 4-es nemes.](helyorzo_kep_2.png)
-2. ábra – „The Weak Raise”: 0–6 pont, 5+ adu, nincs 4-es nemes.
+2\. ábra – „The Weak Raise”: 0–6 pont, 5+ adu, nincs 4-es nemes.
 
-#### Az induló viszontválaszai inverted minor sima emelés után
+#### **Az induló viszontválaszai inverted minor sima emelés után**
+
 1♣ → 2♣ után:
-![Opener's Rebids After 1♣ : 2♣](helyorzo_kep_3.png)
 
 1♦ → 2♦ után:
-![Opener's Rebids After 1♦ : 2♦](helyorzo_kep_4.png)
 
-> ℹ️ Lásd még:
-> - Forcing notrump: https://en.wikipedia.org/wiki/Forcing_notrump
-> - Goodbye Forcing NT (új megoldás): bridgewebs.com/ocala/GoodByeForceNT.pdf
+#### **Jacoby 2NT (segítőként, csak nemes nyitásra)**
 
-#### Jacoby 2NT (segítőként, csak nemes nyitásra)
-> ⚠️ Csak akkor érvényes, ha az ellenfél NEM szólt közbe!
+⚠️ Csak akkor érvényes, ha az ellenfél NEM szólt közbe\!
 
 Egy 1♥ vagy 1♠ nyitás után a segítő közvetlen 2NT licitje a Jacoby 2NT konvenció.
 
 **Feltételek**
-- Segítőként, közvetlenül egy 1♥/1♠ nyitás után.
-- 13+ pont és 3+ lap támogatás az induló színéből.
-- Műlicit; akkor használod, amikor nem tudod a partner színét 2-es szinten (6–9 p) vagy 3-as szinten (10–12 p) ismételni, mert több (13+) pontod0 van.
-- Cél: slem (de minimum gém!) érdeklődést jelez, forcing.
-- Ha passzolt kéz mondja be, az 10–12 pontot ígér, NEM Jacoby 2NT.
+
+* Segítőként, közvetlenül egy 1♥/1♠ nyitás után.  
+* 13+ pont és **4+ lap** támogatás az induló színéből (a Bergen Raises rendszerben a Jacoby 2NT 4 lapos fittel párosul\!).  
+* Műlicit, Game Forcing. Slem érdeklődést jelez.
 
 **Induló válaszai a 2NT-re**
+
 | Induló licitje | Jelentés |
-|---|---|
+| :---- | :---- |
 | 3 szinten új szín | 0 vagy 1 a színből (splinter / shortness). |
 | 4 szinten új szín | 4 vagy több lap a színből (erős mellékszín). |
 | 3 a saját nemes színe (1♥ → 2NT → 3♥) | Ha kőrrel indult: 17–20 pont, slem-érdeklődés. Ha pikkel indult: a 3♥ a 3♣/♦-hoz hasonlóan egykét/színhiányt ígér. |
 | 3♠ az induló pikkje (1♠ → 2NT → 3♠) | 17–20 pont, slem-érdeklődés. (Ha kőrrel indult, akkor 3♠ a 3♣/♦-hoz hasonlóan egykét/színhiányt ígér.) |
 | 3NT | Csak 13–16 pont, nincs egyke vagy színhiány. |
 | 4♣ / 4♦ | 5+ lap a jelzett színből. |
-| 4♥ / 4♠ | Ha az indított nemes szín, akkor lezáró licit. Ha a másik nemes, akkor 5+ a licitált színből. |
+| 4♥ / 4♠ | Ha az indított nemes szín, akkor lezáró licit. (Sign-off, rossz kéz). |
 
 **A válaszok prioritása (általánosan)**
-1.  Először: erős 5+ lapos mellékszín bemondása.
-2.  Aztán: egyke vagy színhiány jelzése.
-3.  Aztán: ugrás 4 nemesre 12–14 ponttal.
-4.  Végül: a megegyezett nemes 3-as szintű ismétlése 16+ ponttal és nincs más megfelelő licit.
+
+1. Először: erős 5+ lapos mellékszín bemondása.  
+2. Aztán: egyke vagy színhiány jelzése.  
+3. Aztán: ugrás 4 nemesre 12–14 ponttal.  
+4. Végül: a megegyezett nemes 3-as szintű ismétlése 16+ ponttal és nincs más megfelelő licit.
 
 **Példa licitsorozat 1**
+
 | Induló | Segítő |
-|---|---|
+| :---- | :---- |
 | 1♥ (5+ kőr, 13–20 pont) | 2NT (4+ kőr, 13+ pont) |
 | 3♣ (egyke/színhiány treffből) | 3♦ (ász vagy színhiány káróból) |
 | 4♣ (fixen színhiány treffből) | 4♠ (ász vagy színhiány pikkből) |
-| 4NT (Blackwood, adu: kőr) | ... |
+| 4NT (Kickback 1430, adu: kőr) | ... |
 
-**Példa licitsorozat 2**
-| Induló | Segítő |
-|---|---|
-| 1♥ (5+ kőr, 13–20 pont) | 2NT (4+ kőr, 13+ pont) |
-| 3♥ (17–20 pont) | 4♦ (ász vagy színhiány káróból) |
-| 4♠ (egyke/színhiány pikkből) | 4NT (Blackwood, adu: kőr) |
+### **B) Első válasz – ha az ellenfél KÖZBESZÓLT**
 
-### B) Első válasz – ha az ellenfél KÖZBESZÓLT
-> ⚠️ Ha közbeszóltak, sok természetes licit jelentése megváltozik. Az inverted minor és a Jacoby 2NT NEM játszik közbeszólás esetén!
+⚠️ Ha közbeszóltak, sok természetes licit jelentése megváltozik. Az inverted minor és a Jacoby 2NT NEM játszik közbeszólás esetén\!
 
-#### Negatív double (kontra)
-- Csak akkor van, ha az ellenfél overcall-olta az indulót (pontosan egy-egy licit hangzott el az ellenféltől és a partnertől).
-- Ígér: 6+ pont és pontosan 4-lapos hosszúságot az egyik vagy mindkét nemes színből (attól függően, hogy hangzott-e már el nemes szín).
-- Ha pl. a kőr már elhangzott, akkor a kontra pikket ígér.
-- Ha egyik nemes szín sem hangzott még el, akkor mindkettőből ígér 4-et.
+#### **\[REVÍZIÓ\] Negatív double (kontra) \- A Standard SAYC (B Konvenció)**
 
-Ebből következik: ha pontosan egy-egy licit hangzott el ugyanígy és a segítő mégis nemes színt licitál (kontra helyett), az 5+ lapos hosszúságot ígér!
+A negatív kontra 6+ pontot ígér, és kifejezetten a be nem mondott nemes szín(ek)et mutatja. Érthetően:
 
-**Példák**
-*Ellenfél nemes színnel overcallolt:*
-| Észak | Kelet | Dél | Nyugat | Jelentés |
-|---|---|---|---|---|
-| 1♦ | 1♥ | kontra (X) | — | 4 pikk és 6–9 pont |
+* **Ha az ellenfél nemessel szólt közbe (pl. 1♦ \- 1♥ \- X):** A kontra *pontosan 4 lapos* hosszúságot ígér a másik nemesből (itt pikkből). (Ha 5 pikked lenne, azt licitálnád, hogy 1♠).  
+* **Ha az ellenfél nemessel, kettes szinten szólt közbe (pl. 1♦ \- 2♥ \- X):** Ez is *pontosan 4 lapos* pikket ígér. (Mivel a 2♠ licit legalább 5 lapot és 10+ pontot ígérne).  
+* **Ha az ellenfél alsó színnel szólt közbe (pl. 1♣ \- 1♦ \- X):** A kontra mindkét nemesből *pontosan 4-4 lapot* ígér.
 
-*Ellenfél nem nemes színnel overcallolt:*
-| Észak | Kelet | Dél | Nyugat | Jelentés |
-|---|---|---|---|---|
-| 1♣ | 1♦ | kontra (X) | — | 4 pikk és/vagy kőr, 6–9 pont |
+*Ebből következik a fontos inferencia:* Ha az ellenfél 1♥-t vagy 2♥-t mondott, és a segítő kontrázni tudna (hogy 4 pikket mutasson), de ehelyett mégis licitálja a pikket (pl. 1♠ vagy 2♠), akkor a licitje **kőbe vésetten 5+ lapos** pikket ígér\!
 
-- Több ponttal a segítő cue-bidel az ellenfél színében.
-- Az induló viszontválaszainak elve takeout double-höz hasonló, de ld. ott (Overcallok fejezet).
+#### **Kevert emelés (Mixed Raise)**
 
-#### Kevert emelés (Mixed Raise)
-Ha közbeszóltak az indulásra, a segítő kevert emeléssel válaszol. Példa:
-| Észak | Kelet | Dél | Nyugat |
-|---|---|---|---|
-| 1♥ | 2♣ | ? | — |
+Ha közbeszóltak az indulásra, a segítő kevert emeléssel válaszol. Példa: Észak 1♥ — Kelet 2♣ — Dél ?
 
 | Dél válasza | Jelentés |
-|---|---|
+| :---- | :---- |
 | Passz | 0–5 pont és nincs 4-nél több kőr. |
 | Szín ismétlése 2-es szinten (2♥) | 10–12 pont. |
 | Szín ismétlése 3-as szinten (3♥) | 6–9 pont, preempt. |
 | Szín ismétlése 4-es szinten (4♥) | 0–5 pont, minimum 5-ös szín. |
 | Ellenfél színének licitálása (3♣ cue bid) | 13+ pont, támogatás, forcing. |
 
----
+## **Válaszok az 1NT vagy 2NT indulásra**
 
-## Válaszok az 1NT vagy 2NT indulásra
 Az 1NT pontosan 15–17 pontot és balanced eloszlást ígér. A 2NT 20–21 pontot.
-- Hasznos: 1NT (15–17) áttekintés
-- Bridge hand generator: playbridge.com / pb_gen_set2hands.php
 
-### A) Segítő válaszai 1NT indulásra (közbeszólás nélkül)
+### **A) Segítő válaszai 1NT indulásra (közbeszólás nélkül)**
+
 | Licit | Jelentés |
-|---|---|
+| :---- | :---- |
 | Passz | 0–7 pont és nincs 5-ös nemes (→ Jacoby) vagy 6-os minor szín (→ 2♠). |
-| 2♣ (Stayman) | 8–9 pont, pontosan négy kőr és/vagy négy pikk (egyébként Puppet Stayman). |
+| 2♣ (Stayman) | 8–9 pont, pontosan négy kőr és/vagy négy pikk (egyébként Puppet Stayman). VAGY Garbage Stayman / Smolen. |
 | 2♦ (Jacoby transzfer kőrre) | 8+ pont, legalább 5 kőr, partner mondja be a 2♥-t. |
 | 2♥ (Jacoby transzfer pikkre) | 8+ pont, legalább 5 pikk, partner mondja be a 2♠-t. |
 | 2♠ (Minor suit transfer) | 8+ pont, hatos hosszúságú nem nemes (minor) szín. Erre kötelező 3♣-t mondani; gyenge partner 3♦-ra korrigál, ha káró volt. |
@@ -346,192 +331,96 @@ Az 1NT pontosan 15–17 pontot és balanced eloszlást ígér. A 2NT 20–21 pon
 | 3NT | 10–13 pont, biztos a gém, nincs slem. Lezáró licit. |
 | 4♦ (Texas transfer kőrre) | 6+ kőr, partner mondja be a 4♥-t. |
 | 4♥ (Texas transfer pikkre) | 6+ pikk, partner mondja be a 4♠-t. |
-| 4NT | Slem support pont, balanced eloszlás. Itt: kvantitatív (egyes források szerint Blackwood is játszható). |
+| **\[REVÍZIÓ\]** 4NT | **Kvantitatív meghívás 6NT-re.** (16-17 HCP). A nyitó 15 ponttal passzol, 17-tel 6NT-re emel. **NEM ászkérdés\!** 1NT után az ászkérdés a 4♣ Gerber\! |
 
-#### Stayman konvenció (1NT → 2♣)
-- Részletes leírás: bridgebum.com/stayman.php
-- Feltételek: 8+ pont, legalább egy 4-es hosszúságú nemes szín.
-- Cél: kiderüljön, lehet-e gém vagy slem nemes színből (legalább 23–25 pontunk van).
+#### **\[REVÍZIÓ\] Stayman, Smolen és Garbage Stayman konvenciók (1NT → 2♣)**
 
-**Az induló viszontválaszai 2♣-re (1NT → 2♣ → ?)**
-| Induló licitje | Jelentés |
-|---|---|
-| 2♦ | Az indulónak nincs 4-es hosszúságú nemes színe (pl. 4-3-3-3 vagy 4 treff). |
-| 2♥ | Az indulónak van 4 kőre, de mellette lehet 4 pikkje is. |
-| 2♠ | Az indulónak van 4 pikkje, és nincs 4 kőre. |
+A Stayman feltétele általában 8+ pont, célja a 4-4 nemes fit megtalálása. Azonban az 1NT → 2♣ sorozat két speciális elágazással is kiegészül:
 
-**Segítő válaszai – 1NT → 2♣ → 2♦ után**
+**1\. A Garbage Stayman (Szemét Stayman \- Menekülés)** Ha a segítőnek **nagyon gyenge** keze van (0-7 pont), de "rövid" a treffje (pl. 4-4-4-1 vagy 4-4-5-0 eloszlás), a 1NT elbukna. A segítő elindítja a Staymant (2♣).
+
+* Ha a nyitó nemest talál (2♥ vagy 2♠), a segítő boldogan **Passzol**.  
+* Ha a nyitó tagadja a nemest (2♦), a segítő **2♥-t vagy 2♠-t** mond. Mivel a Staymant indító már nem lehet erős (különben ugrana), ez a licit **Sign-off**, azaz a nyitónak kötelező passzolnia\!
+
+**2\. A Smolen Konvenció (Game Forcing 5-4 nemesek)** Ha a segítőnek **Game Forcing** keze van (10+ pont) és **5-4 eloszlása** a nemesekben. (Nem indíthat Jacoby Transzfert, mert akkor a 4 lapos nemese elvész).
+
+* A segítő Staymant mond (2♣).  
+* Ha az induló bemond egy nemest (2♥/2♠) → Megvan a gém, emelünk.  
+* Ha az induló tagadja a nemest (**2♦**), a segítő **UGRIK a másik, RÖVIDEBB nemes színben** (3♥ vagy 3♠).  
+* *Jelentés:* A bemondott 3-as szintű színben 4 lapom van, a *másik* nemesben 5 lapom van, és Game Forcing vagyok\! Az induló így tudni fogja a pontos 5-4 eloszlást, és ha van 3 lapos fitje az 5-ös színünkhöz, ő fogja azt bemondani, így az erős 1NT kéz lesz a rejtve maradó felvevő\!
+
+**Segítő válaszai – 1NT → 2♣ → 2♦ (Nincs 4-es nemes) után:**
+
 | Segítő licitje | Jelentés |
-|---|---|
-| 2♥ | 5 kőr és 4 pikk, invitál a 4♥-re (nem kötelező). |
-| 2♠ | 5 pikk és 4 kőr, invitál a 4♠-re (nem kötelező). |
+| :---- | :---- |
+| **\[REVÍZIÓ\]** 2♥/2♠ | Garbage Stayman: 0-7 pont, gyenge kéz 5-ös nemessel (vagy menekülés). Sign-off\! |
 | 2NT | Nincs 5-ös nemes (csak egy vagy két 4-es), invitál 3NT-re. |
-| 3♥ | Mint a 2♥, de erre kötelező a gém; jelzi, hogy erős. |
-| 3♠ | Mint a 2♠, de erre kötelező a gém; jelzi, hogy erős. |
+| **\[REVÍZIÓ\]** 3♥/3♠ | Smolen konvenció: 4 lap a licitált nemesben, 5 lap a másikban. Game Forcing. |
 | 3NT | Lezáró licit, nincs slem. |
-| 4♥ | Lezáró licit, 6 db kőrrel, nincs slem. |
-| 4♠ | Lezáró licit, 6 db pikkel, nincs slem. |
-| 4NT | Ászkérdés. |
-| 3♣ / 3♦ | Mégsem volt 4-es nemes (csak az erőt jelezte a Stayman); 6 (vagy 5 erős) lapot ígér a treffből/káróból. Biztos a gém! |
 
-**Segítő válaszai – 1NT → 2♣ → 2♥ után**
-| Segítő licitje | Jelentés |
-|---|---|
-| 2♠ | 5 pikk és 4 kőr. |
-| 2NT | 4 pikk és max 3 kőr; nem jó a kőr fit (csak 7 lenne), de pikkből megvan a 8 adu. Invitál 4♠-re. |
-| 3♥ | Van 4 kőre, invitál gémre. |
-| 3♠ | 5 pikk és 4 kőr, kötelező a gém. |
-| 3NT | 4 pikk és max 3 kőr. Elpasszolható, vagy az induló mondhat 4♠-t, ha 4 pikkje van. |
-| 4♥ | Lezáró licit. |
-| 4NT | Ászkérdés. |
+#### **Puppet Stayman konvenció (1NT → 3♣ vagy 2NT → 3♣)**
 
-**Segítő válaszai – 1NT → 2♣ → 2♠ után**
-| Segítő licitje | Jelentés |
-|---|---|
-| 2NT | Invitál 3NT-re. |
-| 3♥ | 5 kőr és 4 pikk, kötelező a gém. |
-| 3♠ | 4 pikk, invitál gémre. |
-| 3NT | 4 kőre van, lezáró licit. |
-| 4♠ | Lezáró licit. |
-| 4NT | Ászkérdés. |
+Feltételek: 1NT-re 10–13 pont, 2NT-re 4–5 pont, és legalább egy 3-as hosszú nemes.
 
-#### Puppet Stayman konvenció (1NT → 3♣ vagy 2NT → 3♣)
-- Részletes leírás: bridgebum.com/puppet_stayman.php
-- Feltételek: 1NT-re 10–13 pont, 2NT-re 4–5 pont, és legalább egy 3-as hosszú nemes.
+#### **Jacoby transzfer I. és II. (1NT → 2♦ kőrre, 1NT → 2♥ pikkre)**
 
-#### Jacoby transzfer I. – 1NT → 2♦ (kőr)
-- Részletes leírás: bridgebum.com/jacoby_transfers.php
-- Feltétel: 5 vagy több kőr.
-- Cél: az erős kéz licitálja be a kőrt, hogy a segítő keze legyen az asztal és ne derüljön ki, hol vannak az erős lapok.
+Feltétel: 5 vagy több lap a színben. Az erős kéz (nyitó) fogadja a transzfert (2♥/2♠), így ő lesz a felvevő. A válaszokat lásd a standard táblázatban az eredeti doksi alapján.
 
-**Induló válaszai a 2♦-re**
-| Induló licitje | Jelentés |
-|---|---|
-| 2♥ | Elfogadod a kőrt, konfirmálod, hogy van belőle 3. |
-| 3♥ | Super-accept: van belőle 4. Inkább 16–17 pont. |
-| 2♠ | Csak 2 kőröd van, de 4-es pikkel rendelkezel. (A segítő ilyenkor 2NT-t mondjon, ha nincs 6 kőre vagy 4 pikkje – hogy ne legyen rövid az adu.) |
-| 2NT | Max 2 kőröd és max 3 pikked van. |
+### **B) Válaszok 1NT indulásra, ha az ellenfél közbeszólt**
 
-**Segítő válaszai miután megegyeztetek a kőrben (1NT → 2♦ → 2♥ → ?)**
-| Segítő licitje | Jelentés |
-|---|---|
-| 2♠ | 8+ pont, 5 kőr mellett 4+ pikk is, game forcing, esetleg slem. |
-| 2NT | 8+ pont, balanced eloszlás, nincs egyke vagy színhiány. 3NT vagy 3-4 kőr lehet belőle. |
-| 3♣ | 8+ pont, 5 kőr mellett 4+ treff is, game forcing, esetleg slem. |
-| 3♦ | 8+ pont, 5 kőr mellett 4+ káró is, game forcing, esetleg slem. |
-| 3♥ | 8+ pont, 5 (de inkább 6) kőr; ha az induló 16–17 pontos, mondja be a 4♥-t. |
-| 3♠ | Pikkből egyke vagy színhiány, slem interest. |
-| 3NT | Lezáró licit, nincs slem, csak game. Felülbírálható 4♥-re. |
-| 4♥ | Lezáró licit, inkább 6 (és nem 5) kőrrel. |
+#### **Az ellenfél kettes szinten szólt közbe – kontra**
 
-#### Jacoby transzfer II. – 1NT → 2♥ (pikk)
-- Feltétel: 5 vagy több pikk.
+A kontra a Staymant jelenti. Példa: 1NT – 2♦ – X (Stayman: 8+ pont, legalább egy 4-es nemes).
 
-**Induló válaszai a 2♥-re**
-| Induló licitje | Jelentés |
-|---|---|
-| 2♠ | Elfogadod a pikket, konfirmálod, hogy van belőle 3. |
-| 3♠ | Super-accept: van belőle 4. Inkább 16–17 pont. |
-| 2NT | Max 2 pikked. Nem érdemes 3 kőrt mondani – a segítő be tudja mondani a következő licitével. |
+#### **Lebensohl 1NT közbeszólás ellen**
 
-**Segítő válaszai miután megegyeztetek a pikkben (1NT → 2♥ → 2♠ → ?)**
-| Segítő licitje | Jelentés |
-|---|---|
-| 2NT | 8+ pont, balanced eloszlás. 3NT vagy 3-4 pikk lehet belőle. |
-| 3♣ | 8+ pont, 5 pikk mellett 4+ treff is, game forcing, esetleg slem. |
-| 3♦ | 8+ pont, 5 pikk mellett 4+ káró is, game forcing, esetleg slem. |
-| 3♥ | 8+ pont, 5 pikk mellett 4+ kőr is, game forcing, esetleg slem. |
-| 3♠ | 8+ pont, 5 (de inkább 6) pikk; ha az induló 16–17 pontos, mondja be a 4♠-t. |
-| 3NT | Lezáró licit, nincs slem. Felülbírálható 4♠-re. |
-| 4♠ | Lezáró licit, inkább 6 (és nem 5) pikkel. |
+💡 **Slow shows, fast denies.**
 
-### B) Válaszok 1NT indulásra, ha az ellenfél közbeszólt
+Példa licit kiindulás: 1NT – (2♥) – ? Pont szerint:
 
-#### Az ellenfél kettes szinten szólt közbe – kontra
-A kontra a Staymant jelenti.
+* **0–7 pont (gyenge):** 2NT → 3♣/3♦ Lebensohl, lezáró.  
+* **Invitálási kéz (8–9 pont):** Lebensohl (2NT) után olyan szín bemondása, amit azonnal is mondhattál volna (pl. 3♠). Ígér 5+ lapot, invitálás.  
+* **10+ pont (game force):** \- 3-as szinten új szín azonnal (Lebensohl nélkül, pl. 3♠): 5 a színből, GF.  
+  * Cue bid (3♥): „Van stoppered? → 3NT \= van, más \= nincs.”  
+  * Lebensohl → 3NT: VAN stopper, nincs 4 nemes.  
+  * Közvetlen 3NT: NINCS stopper, nincs 4 nemes.
 
-Példa 1:
-| Észak | Kelet | Dél | Nyugat | Jelentés |
-|---|---|---|---|---|
-| 1NT | 2♦ | X (kontra) | — | Stayman: 8+ pont, legalább egy 4-es nemes |
+## **Válasz a gyenge 2-esre**
 
-Példa 2 (a partner ad 2♦ Stayman válaszra a következő licitkörben kontrázik):
-| Észak | Kelet | Dél | Nyugat | |
-|---|---|---|---|---|
-| 1NT | passz | 2♣ (Stayman) | 2♦ | |
-| X (kontra) | — | — | — | „Én is 2♦-t mondtam volna” → tagadja a 4-es nemest |
-
-#### Lebensohl 1NT közbeszólás ellen
-> 💡 **Slow shows, fast denies.**
-
-Példa licit kiindulás: 1NT – (2♥) – ?
-
-**Pont szerint**
-*0–7 pont (gyenge):*
-- Új szín 2-es szinten (pl. 2♠): lezáró licit.
-- 2NT → 3♣/3♦: Lebensohl, gyengébb szín, lezáró.
-- Kontra: take-out, max 2 a közbeszólt színből; mondj te színt.
-
-*Invitálási kéz (8–9 pont):*
-- Lebensohl után olyan szín, amit be tudtál volna mondani (3♠): 5 a színből, invitálás.
-- Új szín 3-as szinten azonnali ugrással: 4 a színből (Lebensohlnál gyenge).
-
-*10+ pont (game force):*
-- 3-as szinten új szín azonnal (Lebensohl nélkül, pl. 3♠): 5 a színből, GF.
-- Cue bid (3♥): „Van stoppered? → 3NT = van, más = nincs.”
-- Stop 3NT: NINCS stopper, NINCS 4 nemes (vagy egyenletes eloszlás).
-- Lebensohl → 3NT: VAN stopper, nincs 4 nemes (vagy egyenletes eloszlás).
-- Cue bid (3♥) közvetlenül: egyik nemesből 4 lap, NINCS stopper.
-- Lebensohl + cue bid: egyik nemesből 4 lap, VAN stopper.
-
-> ℹ️ Részletes referencia: Lebensohl in a Nutshell (PDF)
-
----
-
-## Válasz a gyenge 2-esre
 A gyenge 2-es 6–10 pontot és pontosan 6-lapos erős színt mutat.
-Az alábbi válaszok érvényesek mind a saját, mind az overcall gyenge 2-esre.
 
-### A) Válaszok közbeszólás nélkül
+### **A) Válaszok közbeszólás nélkül**
+
 | Licit | Jelentés |
-|---|---|
+| :---- | :---- |
 | Emelés ugrással (2♥ → 4♥) | 4-es support és 0–5 pont. Preempt. |
 | Szín sima emelése (2♥ → 3♥) | 3-as vagy 4-es support, kb. 6–13 pont. Preempt. |
-| Új szín (2♥ → 2♠) | 10–15 pont. Nincs supportod, legalább 5-ös hosszúság, naturális, egy körig kinda forcing. |
-| 2NT (OGUST) | 15+ pont, mesterséges; lásd alább. |
+| Új szín (2♥ → 2♠) | 10–15 pont. Nincs supportod, legalább 5-ös hosszúság, egy körig forcing. |
+| 2NT (OGUST) | 15+ pont, mesterséges királykérdés a partner színében. |
 
-*Pont – válasz diagram (segítő pontjai szerint):*
-![Pont - válasz diagram](helyorzo_kep_5.png)
-
-#### OGUST – válaszok az induló kérdésére (2♥ → 2NT → ?)
-A segítő 2NT licitje 15+ pontot ígér; ez a 2NT mesterséges (nem természetes szan licit). Az induló a következőképp válaszol:
-
-![Ogust Responses](helyorzo_kep_6.png)
+#### **OGUST – válaszok az induló kérdésére (2♥ → 2NT → ?)**
 
 | Induló licitje | Jelentés |
-|---|---|
+| :---- | :---- |
 | 3♣ | Gyenge kéz (5–7 pont), egy a top 3 honőr közül a színében. |
 | 3♦ | Gyenge kéz (5–7 pont), kettő a top 3 honőr közül. |
 | 3♥ | Jó kéz (8–10 pont), egy a top 3 honőr közül. |
 | 3♠ | Jó kéz (8–10 pont), kettő a top 3 honőr közül. |
 | 3NT | Jó kéz (8–10 pont), mindhárom top honőr. |
 
-Az OGUST kérdés egy körig forcing, és natural bid követi.
+### **B) Válaszok közbeszólás esetén – Lebensohl gyenge 2-es ellen**
 
-### B) Válaszok közbeszólás esetén – Lebensohl gyenge 2-es ellen
 Ha az ellenfelek közbeszóltak a gyenge 2-esre adott takeout double-re, akkor a Lebensohl relay-t használjuk.
-- Részletes leírás: bridgebum.com/lebensohl_over_weak_two.php
 
----
+## **Erős 2 treff indulás**
 
-## Erős 2 treff indulás
-- Részletes leírás: bridgebum.com/strong_2c.php
-- Feltételek: legalább 17 HCP, és összesen legalább 21 pont; a kéz nem balanced. Balanced kéznél 2NT az indulás.
-- A 2♦/2♥ válasz kivételével minden licit természetes és game forcing.
+* Feltételek: legalább 17 HCP, és összesen legalább 21 pont; a kéz nem balanced. Balanced kéznél 2NT az indulás.  
+* A 2♦/2♥ válasz kivételével minden licit természetes és game forcing.
 
-### Válaszok a 2♣ indulásra (2♣ → ?)
+### **Válaszok a 2♣ indulásra (2♣ → ?)**
+
 | Licit | Jelentés |
-|---|---|
+| :---- | :---- |
 | 2♦ | Negatív válasz, 4–7 pont, nem ígér kárót. Nem passzolható. |
 | 2♥ | Dupla negatív válasz, 0–3 pont, nem ígér kőrt. Nem passzolható. |
 | 2♠ | 8+ pont, 5-öt ígér a pikkből, game forcing. |
@@ -540,443 +429,314 @@ Ha az ellenfelek közbeszóltak a gyenge 2-esre adott takeout double-re, akkor a
 | 3♥ | 8+ pont, 5 kőrt ígér. |
 | 3NT | 12–15 pont, balanced. |
 
-### Az induló viszontválaszai a 2♦ negatív válaszra (2♣ → 2♦ → ?)
-| Licit | Jelentés |
-|---|---|
-| 2♥ | 21+ pont és 5 kőr. |
-| 2♠ | 21+ pont és 5 pikk. |
-| 2NT | 22–24 pont. |
-| 3♣ / 3♦ | 21+ pont és 5-öt ígér a színből. |
-| 3NT | 25–27 pont. |
-| 4NT | 28–30 pont (és tovább 3 pontonként emelve). |
-
-### Az induló viszontválaszai a 2♥ dupla negatív válaszra (2♣ → 2♥ → ?)
-| Licit | Jelentés |
-|---|---|
-| 2♠ | 21+ pont és 5 pikk. |
-| 2NT | 22–24 pont. EZ AZ EGYETLEN ELPASSZOLHATÓ GAME ALATT. |
-| 3♣ / 3♦ | 21+ pont és 5-öt ígér a színből. |
-| 3♥ | 21+ pont és 5 kőr. |
-| 3NT | 25–27 pont. |
-| 4NT | 28–30 pont (és tovább 3 pontonként emelve). |
-
-### Egyéb megfontolások az erős 2 treff után
-- 2/3NT pontjelzés: bármilyen válasz után az induló 2NT/3NT/4NT licitje pontot jelez (22–24 / 25–27 / 28–30, stb.).
-- A segítő tudja, hogy az induló mit licitált, így el tudja dönteni, hogy szant vagy színt játszanak. Ha pl. 12 pontja van, magától is mondhatja a nagy slemet, ha az induló kis slemen állna meg.
-- Közbeszóltak: a bemondott színre adott kontra 8+ pontot és 5+ a színből jelent. Később folytatható a licit, immár ismerve az ellenfél erejét és színeit.
-- Megkontrázták a 2♣-t: az erre adott rekontra 5+ treffet és 8+ pontot jelez.
-
----
-
-## Slamkereső konvenciók
-Ha megegyezett az adu szín, a slam-keresés célja annak megállapítása, hány kulcslap (4 ász + adu király) van a partnerségnél.
-Az erre szolgáló főkonvenció a Kickback Roman Key Card Blackwood (RKC), de szükség esetén Gerber, illetve speciális helyzetben Exclusion Blackwood is használható.
-
-### (4NT) Kickback Roman Key Card Blackwood (RKC) ászkérdés – 1430
-(...vagy királyait, heteseit kérdezzük rá.)
-
-> 💡 **HELYETTE JÁTSSZUNK KICKBACKET!** Az ászkérdés a megegyezett adu fölötti legolcsóbb licit.
-
-#### Kickback 1430
-- Ha megegyeztünk a színben, akkor a legolcsóbb következő bid az RKC ászkérdés.
-- Ha még nem egyeztünk meg, akkor 4-re ugrás → ÉS megegyezés ÉS ászkérdés (1♣ → 1♦ → 4♥ = RKC).
-
-#### Válaszok 1430-ban
-![Playing 1430](helyorzo_kep_7.png)
-
-| | |
-|---|---|
-| 1. lépcső | 1 vagy 4 kulcslap (key card) |
-| 2. lépcső | 0 vagy 3 kulcslap |
-| 3. lépcső | 2 vagy 5 kulcslap, adu dáma nélkül |
-| 4. lépcső | 2 vagy 5 kulcslap, adu dámával |
-
-> ℹ️ További olvasnivaló: 
-> - bridgehands.com/K/Kickback.htm
-> - Kickback PDF (Northern Kentucky BC)
-> - Attitude Minorwood (in-oz.com)
-> - Kickback (Simon, ACBLU 390)
-
-> 💡 **Megfontolás:** a megfigyelés, hogy „katasztrófa is lehet” valójában félig kamu, hiszen a Kickback miatt meg tudunk állni gémen. Például: 1♥ → 2♦ → 3♣ → 4♣ (ezen a ponton az induló tudja, hogy támogatom a treffjét, és 10–16 pontom van) → 5♦ (1430) → 5NT (2 keycard, no Q) → 5♠... Lásd a hivatkozásokat a fenti linkeken (cuebid–void megőrzés, illetve természetes 4-es szintű bid).
-
-Minorwood hátránya: invitational és/vagy competitive 4-es szintű bid eltűnik, ami nagy hátrány. Ezt mi nem szeretjük, túl sokat áldoz fel.
-Továbbá ne feledjük, hogy 1430-nál létezik a void válasz is – használjuk!
-
-### Exclusion Blackwood
-Miután a partnerség megegyezett aduban, egy új színbe történő ugrás a 4-es vagy 5-ös szinten ezt jelenti: „Partner, ebben a színben színhiányom van. Slem érdekel, és nem érdekel, ha nálad van ennek a színnek az ásza. Mutasd meg, hány kulcslapod van a többi színből.”
-
-![Exclusion Blackwood Example](helyorzo_kep_8.png)
-
-### Void válaszok 1430-ban
-Ha a segítőnek színhiánya van, az alábbi módon jelezheti:
-![Void Responses in 1430](helyorzo_kep_9.png)
-
-### 5NT Blackwood királykérdés
-Egyelőre: a Kickback királykérdés is +1 szinttel emelt licittel megy. A kérdés már az, hogy lesz-e nagy slem. 5NT példájával:
-
-| Válasz | Jelentés |
-|---|---|
-| 6♣ | 0 vagy 4 király |
-| 6♦ | 1 király |
-| 6♥ | 2 király |
-| 6♠ | 3 király |
-
-### Adu dáma megkérdezése RKC-ra érkezett válasz után
-Az RKC-t licitáló megkérdezheti az adu dámát is. A legolcsóbb új szín: „Nálad van az adu dáma?”
-
-| Válasz | Jelentés |
-|---|---|
-| Adu szín visszahívása | Nincs nálam |
-| 5NT | Itt a dáma ÉS nincs másik színből király |
-| Bármelyik nem adu szín | Itt a dáma ÉS a licitált színből a király |
-
-### Gerber (szanra adott) ász- és királykérdés
-- Részletes leírás: bridgebum.com/gerber.php
-
-> 💡 **EZ GYAKORLATILAG KICKBACK SZAN UTÁN!**
-
-- Feltétel: chỉ szan licitre lehet mondani.
-- Cél: meg lehessen állni 4 vagy 5 szanon, ha nincs slem.
-
-#### Válaszok az ászkérdésre (… NT → 4♣ → ?)
-| Válasz | Jelentés |
-|---|---|
-| 4♦ | 0 vagy 4 ász |
-| 4♥ | 1 ász |
-| 4♠ | 2 ász |
-| 4NT | 3 ász |
-
-#### Válaszok a királykérdésre (… → 5♣ → ?)
-| Válasz | Jelentés |
-|---|---|
-| 5♦ | 0 vagy 4 király |
-| 5♥ | 1 király |
-| 5♠ | 2 király |
-| 5NT | 3 király |
-
-### Ha közbeszóltak az ászkérdésre – DEPO
-- Részletes leírás: bridgebum.com/double_even_pass_odd.php
-- DEPO = Double = Even, Pass = Odd.
-
-| Akció | Jelentés |
-|---|---|
-| Kontra (X) | 0, 2 vagy 4 ász |
-| Passz | 1 vagy 3 ász |
-
----
-
-## Overcallok és kompetitív licitek
-A cél, hogy kompetitív licit alakuljon ki: vagy nekünk érje meg játszani (akár bukni 1–2-t), vagy az ellenfelet rávenni magasabb szinten való megállásra, kockáztatva, hogy elbukják a vállalásukat.
-
-### Áttekintő pont-diagram
-Az alábbi diagram mutatja, hogy a segítő pontjai szerint mi a teendő közbeszólással / közbeszólás nélkül, valamint az induló pontjai szerint milyen overcall lehetséges:
-![Áttekintő pont-diagram](helyorzo_kep_10.png)
-
-### Szín bemondása (overcall)
-- Kb. 8–15 pont és legalább 5-ös hosszúság (csak egy ilyen szín van).
-- Kettes szinten már 10+, hármas szinten min. 12 HCP.
-- Kevés ponttal számít, hogy erős legyen a szín.
-
-### Take-out Double
-12–15 (11+) pont, 3-3 minden be nem mondott színből. A partnernek (overcaller partnerének) válaszolnia kell.
-
-#### Válaszok a take-out double-re
-![Take-out Double Responses](helyorzo_kep_11.png)
-
-| Válasz | Jelentés |
-|---|---|
-| Passz | Ha az ellenfél közbeszólt és gyenge vagy (0–6 pont). Ha NEM szóltak közbe, ez penalty double-lé konvertál → csak akkor passzolj, ha erős vagy az ellenfél színéből! |
-| Ugrás nélküli legolcsóbb szín | 0–9 pont, 3 (de általában 4) lap a színből. Ha közbeszóltak, 6–9 pontot ígér! |
-| Ugrás új színben | Min. 4-es szín és 10–12 pont. |
-| Cheapest NT | 7–9 HCP, stopper az ellenfél színében. Valószínűleg nincs 4 lapos nemes. |
-| Ugrás NT-ben | 10–12 HCP, balanced, stopper. |
-| 3NT-re ugrás | 13–15 HCP, balanced, stopper. |
-| Ellenfél színének licitálása (cue bid) | 12+ pont, game forcing. |
-
-### 1NT és 2NT overcall
-- 1NT overcall: 15–18 HCP balanced, valószínűleg fogás az ellenfél színéből.
-- 2-es szintre adott 2NT overcall: 16–18 HCP balanced, fixen fogás az ellenfél színéből.
-
-### Power double
-16+ pontot ígér. Take-out double után a partnerem válaszol, és én utána nem passzolok, hanem:
-
-| Második licit | Jelentés |
-|---|---|
-| Szín | Erős vagy a színből, minimum 5+ (honorral), 16+ HCP. |
-| 1NT | 19–21 HCP, balanced, fogás az ellenfél színéből. |
-| 2NT | 22–24 HCP, balanced, fogás az ellenfél színéből. |
-| Kontra (újabb) | 15–18 pont, nincs bemondható 5-ös szín. |
-
-### Take-out Double 4-es magasan
-4-es szinten a kontra büntető. Helyette a 4NT a takeout double.
-
-### Újranyitó kontra (Reopening Double)
-A take-out double speciális fajtája, amit passzolt kézzel mondok be, ha az ellenfél egyes szinten játszana.
-Az értelme: az ellenfél segítőjének nincs 6 pontja (különben válaszolt volna), tehát van rá esély, hogy nálunk van 20+ pont és inkább mi játsszunk.
-Maximum 11 pontot ígér és nincs 5-ös szín.
-
-### Support Double
-Az induló partner második licitje. Nem tudja 4 kártyával támogatni a színed, csak hárommal, de jelzi, hogy ha neked 5-ös a színed, akkor megvan az adu.
-
-| Észak | Kelet | Dél | Nyugat | |
-|---|---|---|---|---|
-| 1♣ | 1♦ | 1♥ | 2♦ | |
-| X (kontra) | — | — | — | Support double: 3 lap a kőrből |
-
-### Two-suited Double
-Ha a partner passzolt és mindkét ellenfél licitált már, akkor a maradék két színből 4-et ígér.
-
-### Negatív kontra (overcaller partnereként)
-Csak akkor van, ha az ellenfél overcallolta az induló partneredet. Ilyenkor 6–9 pontot és pontosan 4-es szín(eke)t ígér.
-Több ponttal cue-bidelek.
-Lásd a részletes példákat a Segítő szabályai → B) Negatív double szakaszban.
-
-### Rekontra (erős)
-Take-out double-re adva minimum 17 pontot jelent.
-
-### Gyenge 2-re adott takeout double után – Lebensohl relay
-- Részletes leírás: bridgebum.com/lebensohl_over_weak_two.php
-
-### Michael's Cue bid
-- Részletes leírás: bridgebum.com/michaels_cuebid.php
-- Két színű lapot ígér, 5-5 kártyát. Mindig valamilyen nemes színt ígér.
-- Ha még nem hangzott el nemes szín, mindkét nemest ígéri.
-- Ha már elhangzott nemes szín, akkor a másik nemes színt ÉS egy unspecified minor színt ígér. Min. kb. 10 pont (Rule of 20 alapján).
-
-| Példa | Jelentés |
-|---|---|
-| 1♣ → 2♣ | 5+ kőr és 5+ pikk. |
-| 1♦ → 2♦ | 5+ kőr és 5+ pikk. |
-| 1♥ → 2♥ | 5+ pikk és valamelyik nem nemes (5+ treff VAGY káró). |
-| 1♠ → 2♠ | 5+ kőr és valamelyik nem nemes (5+ treff VAGY káró). |
-
-#### Válaszok a Michael's cue bidre segítőként
-- Az indikált nemes szín bemondása következő szinten (pl. 1♥ → 2♥ → passz → 2♠): non-forcing sign-off (0–9 pont).
-- Ha közbeszól az induló segítője, akkor a passz 0–5, a licit 6–9 pontot ígér.
-- A cue-bidelt szín megismétlése (pl. 1♥ → 2♥ → passz → 3♥): game vagy slem interest, min. 10 pont és support.
-- 2NT: (kőr vagy pikk overcallra) mondja meg a partner, melyik a nem nemes színe (nincs nemes szín support).
-- Nem nemes szín bemondása: 6+ a másik nem nemes színből; ez azért jó, mert a partnernek valószínűleg csak 0–2 van belőle, eldobható game-re vagy slemre.
-- 3NT: 15 pont, egyenletes eloszlás.
-
-### Unusual 2NT
-- Részletes leírás: bridgebum.com/unusual_2nt.php
-- Stop 2NT overcall. Mindig legalább 5-öt ígér a két leggyengébb, még nem licitált színből. Min. 10 pont (Rule of 20 alapján).
-
-#### Válaszok az Unusual 2NT-re
-- Az egyik indikált szín bemondása (pl. 1♠ → 2NT → 3♣): non-forcing sign-off, 0–9 pont.
-- Cue bid (1♠ → 2NT → 3♠): game vagy slem interest, 10+ pont. Ha gyenge a 2NT-t bemondó, mondja a legolcsóbb színét; ha erős, bármi mást, amelyiket nem ígérte.
-- Új nemes szín bemondása: 6+ a másik nem nemes színből (a partner 0–2 lapra fog számítani belőle).
-- 3NT: 15 pont, egyenletes eloszlás, sign-off.
-
-### Védekezés 1NT indulás ellen – Cappelletti
-- Részletes leírás: bridgebum.com/cappelletti.php
-- Csak 1NT indulásra adott overcall. Nekünk maximum 23–25 pontunk van, tehát a game csak kivételes eloszlás esetén van benne.
-
-| Licit | Jelentés |
-|---|---|
-| X (kontra) | Penalty, kb. 15+ pont. (Lásd: Gates Double változat is.) |
-| 2♣ | Egyszínű kéz (általában 6+ lapos), kb. 11–14 pont. |
-| 2♦ | Legalább 5-4 vagy 4-5 kőr-pikk; partner korrigálja a választott nemesre. |
-| 2♥ | Legalább 5-5 kőr és egy nem nemes szín. |
-| 2♠ | Legalább 5-5 pikk és egy nem nemes szín. |
-| 2NT | Legalább 5-5 treff és káró. |
-
-#### Válaszok a Cappellettire
-- Kontrát el szokás passzolni.
-- Nemes színre a passz: gyenge, és van legalább 2.
-- Nem nemes színre bemondom a színt, amelyikből a legnagyobb a toleranciám.
-- 2♣-re mondhatok 2♦-t (az overcaller mondja be a színét, vagy passzol, ha káró).
-- Erő jelzése: 2NT (10+ ponttal).
-
----
-
-## Egyebek – egyéb konvenciók
-
-### The Rule of 20
-- Részletes leírás: bridgebum.com/rule_of_20.php
-- Számold össze a HCP pontjaidat, és add hozzá a két leghosszabb színed hosszát. Ha az összeg legalább 20, indulj el.
-- Példa: 11 HCP, 5 kőr és 4 treff → 11 + 5 + 4 = 20, indulj.
-
-### The Rule of 44
-- Stop 2♣-vel akkor is lehet indulni, ha nincs 21 pont, de van 4 biztos ütés (pl. 2 ász és 2 király egy színből) és maximum 4 kiadó. Javasolt minimum 18 HCP.
-
----
-
-## Ellenjáték (jelzések)
-Az ellenjátékban a partnered laphívásai nem véletlenszerűek: a kis és nagy kártyák elhelyezésével jelzéseket adsz. Mi az upside-down konvenciókat használjuk.
-
-### Attitude (upside-down)
-A partner indulásánál van szerepe (pl. káró királlyal, majd ásszal indul).
-- **Ha van a színből**
-  - Encourage (bátorítás): kicsit dobok, majd nagyot (nálam van pl. a káró dáma).
-  - Discourage (elbátortalanítás): nagyot dobok, majd kicsit (nincs nálam a káró dáma).
-- **Ha elfogyott a szín (pl. szannál)**
-  - A legelső lehetőség mindig attitude-del jelez: ha tudsz, kicsi lappal encourage egy másik színből, nagy lappal discourage.
-
-### Count (upside-down)
-Megmutatja, hogy az adott színből páros vagy páratlan számú lapod van.
-- Páros (kicsi, mint encourage): kicsi lapot dobsz.
-- Páratlan (nagy, mint discourage): nagy lapot dobsz.
-Pl. 3NT esetén, ha látod, hogy az ellenfél nem a ti színetekkel jön ki (nincs értelme attitude-öt adni), akkor upside-down count-ot adhatsz. Ez segít eldönteni szannál, hogy mikor üssünk az ütésünkkel (hogy ne mehessen le az asztalra többet).
-
-> 💡 **Speciális szabály:** szan játéknál, ha az első hívásnál nem ütöd meg honorral a hívott lapot (pl. 7 → dáma → 2 → …), akkor a 2 itt count-ot ad (kicsi: páros), nem attitude-öt (mert akkor pl. királlyal felülütötted volna).
-
-### Suit-preference
-Megpróbálod megmondani a partnernek, hogy melyik színre váltson. Pl. a partner kőrrel indul 4♠ ellen (ász, király). Te a királyba teszel egy nagy lapot (discourage), majd a másodikba (ász) teszel egy suit preference signalt: a hívott szín (kőr) és az adu (pikk) színeken kívül maradt két szín közül melyiket kéred.
-- Kicsi lap: olcsóbb szín.
-- Nagy lap: drágább szín.
-
----
-
-## Slem- és game-erő megbeszélése
-
-### The Law of Total Tricks
-- Részletes leírás: bridgebum.com/law_of_total_tricks.php
-- Kompetitív licitnél az opponent kizárására és a színünk szintjének gyors elérésére szolgál.
-
-| Adu szám | Biztonságos szint |
-|---|---|
-| 8 adu | 2-es szint |
-| 9 adu | 3-as szint |
-| 10 adu | 4-es szint |
-
-- „Biztonságos” jelentése: meg lehet a contract, vagy csak 1–2-t bukik, ami megéri (főleg gémnél).
-- Ez csak akkor érvényes, ha az ellenfelek már megegyeztek aduban.
-- A vulnerability és a shape sokat számít: ha az ellenfél színéből színhiány vagy egyke van, vagy ha az ő színükből 4–5 darab (mert akkor a másik félnek 0–1), az nagyon befolyásolja.
-- 6 ponttól már mondható, akár kevesebbtől is. Megbeszélni!
-
-### Splinter bids
-- Részletes leírás: bridgebum.com/splinters.php
-- Dupla ugrás: egy van a színből és 12 vagy több pontot ígér.
-
-#### Válaszok
-- Gyenge: 11–14 pont, szín ismétlése.
-- Másik szín licitálása: ászt jelent, mondd meg, miből van ászod te is.
-- 4NT ászkérdés.
-
-### Fourth suit forcing (Negyedik szín forcing)
-- Részletes leírás: bridgebum.com/fourth_suit_forcing.php
-- Feltétel: legalább 13 pont segítőként és az alábbiak teljesülnek:
-
-**Nem használható, ha**
-- a segítő már passzolt egyszer,
-- az ellenfél is indult (overcall),
-- az ellenfél takeout kontrázott,
-- az induló jelezte, hogy erős a keze (17+ pontja van),
-- a segítő jump-shift licitált (pl. 1♦ → 2♥),
-- a segítő two-over-one licitelt az első válaszával (pl. 1♥ → 2♣).
-→ ezekben az esetekben a negyedik szín NEM műlicit, hanem természetes!
-
-- Cél: ne kelljen a negyedik szín ismerete nélkül 3NT-t játszani – mondj valami extrát a shape-edről.
-
-**Válaszok erre a licitre, fontossági sorrendben**
-1. Segítő első színének licitálása 3 kártyával.
-2. Saját második színem licitálása, hogy mutassam: 5-5 a shape-em.
-3. Saját első színem licitálása, hogy mutassam: 6-4 a shape-em.
-4. 2NT licitálása, hogy jelezzem: van fogásom a negyedik színben.
-5. Segítő első színének licitálása, ha Ax vagy Kx doubletonom van.
-6. Last chance saloon: saját első színem licitálása. Félrevezető (a partner 6-4 shape-et fog hinni), de kb. 5 évente egyszer fordul elő, és jelzi, hogy nincs semmi.
-
----
-
-## Pontozás
-
-### Sebezhetőség (vulnerability) – licitkezdő szerint
+### **Egyéb megfontolások az erős 2 treff után**
+
+2/3NT pontjelzés: bármilyen válasz után az induló 2NT/3NT/4NT licitje pontot jelez (22–24 / 25–27 / 28–30, stb.).
+
+## **\[REVÍZIÓ\] 2/1 Game Forcing és Reverse Bidding**
+
+Ezek a modern standard versenybridge alapvető rendszerei.
+
+### **2/1 Game Forcing (Kettő az egyre Game Force)**
+
+Ha a partner 1-es szinten nyit (1♦, 1♥, 1♠), és te **ugrás nélkül, 2-es szinten egy alacsonyabb rangú új színt** mondasz be, az azonnali Game Forcing (GF).
+
+* **Példák:** 1♠ → 2♣, 1♥ → 2♦, 1♠ → 2♥.  
+* **Ígér:** Minimum 13+ HCP (Game érték).  
+* **Előnye:** Mivel már a 2-es szinten kiderült, hogy biztosan gémig (vagy slemig) fogtok licitálni, onnantól kezdve egyetlen licit sem passzolható el gém alatt\! Lassan, kapkodás nélkül mutathatjátok be a színeket, egykéket, fogásokat.
+
+### **Reverse Bidding (Fordított licit)**
+
+Mikor a nyitó a második licitjével **magasabb rangú színt mond be, mint az első**, ráadásul kettes szinten.
+
+* **Példa:** Nyitó 1♣ → Segítő 1♠ → Nyitó **2♦**. (A káró magasabb rangú a treffnél, ha "normális" sorrendben lett volna bemondva, azt 1♦ nyitással kellett volna kezdeni).  
+* **Ígér:** Minimum **17+ HCP**.  
+* **Eloszlás:** Az első szín (treff) MINDIG hosszabb, mint a második (káró), tehát 5+ treff és pontosan 4 káró.  
+* **Szabály:** A Reverse licit a segítő számára legalább 1 körig forcing, *tilos elpasszolni*\!
+
+## **Slamkereső konvenciók**
+
+Ha megegyezett az adu szín, a slam-keresés célja megállapítani a kulcslapokat (4 ász \+ az ADU KIRÁLY \= 5 kulcslap).
+
+### **\[REVÍZIÓ\] (4NT helyett) Kickback Roman Key Card Blackwood (1430)**
+
+Mi **Kickback**\-et játszunk (A Minorwood helyett is ezt alkalmazzuk egységesen)\!
+
+* **Lényeg:** Az ászkérdés (RKC) a megegyezett aduszín fölötti **legolcsóbb, következő licit a 4-es szinten**. Nem a hagyományos 4NT.  
+* Ha ♠ az adu → 4NT az ászkérdés.  
+* Ha ♥ az adu → 4♠ az ászkérdés.  
+* Ha ♦ az adu → 4♥ az ászkérdés.  
+* Ha ♣ az adu → 4♦ az ászkérdés.  
+* Ha még nem egyeztünk meg, akkor 4-es szintű ugrás → megegyezés ÉS ászkérdés egyben.
+
+**Válaszok a Kickback ászkérdésre (1430 lépcsők):** A kérdő licittől számoljuk a "lépcsőket" felfelé.
+
+| Lépcső | Jelentés (Kulcslapok száma) |
+| :---- | :---- |
+| 1\. lépcső | 1 vagy 4 kulcslap (key card) |
+| 2\. lépcső | 0 vagy 3 kulcslap |
+| 3\. lépcső | 2 vagy 5 kulcslap, adu dáma NÉLKÜL |
+| 4\. lépcső | 2 vagy 5 kulcslap, adu DÁMÁVAL |
+
+### **\[REVÍZIÓ\] 5NT Specific King Ask (Királykérdés Kickback után)**
+
+Miután a Kickbackből kiderült, hogy a partnerségnél megvan az összes kulcslap, a nagyslem lehetőségének vizsgálatára a kérdező **5NT**\-t licitál (bármi is volt a Kickback szintje). Ez a Specific King Ask (Specifikus királykérdés).
+
+* **Válasz:** A segítő a 6-os szinten **bemondja azt a konkrét színt**, amelyikben a királya van (pl. 5NT → 6♦ \= Káró királyom van).  
+* Ha több királya is van, a legolcsóbbat (legalacsonyabb rangút) mondja be.  
+* Ha *nincs* külső királya (az adu királyt már beszámoltuk a Kickback-be\!), akkor egyszerűen visszatér az aduszín 6-os szintjére.
+
+### **\[REVÍZIÓ\] Exclusion Blackwood**
+
+Mikor használjuk? Ha a partnerség megegyezett az aduban, de az egyik játékosnak **színhiánya (void)** van egy oldalszínben. Ilyenkor azt akarja megtudni: *"Hány kulcslapod van, NEM SZÁMÍTVA az én színhiányos színem ászát?"*
+
+* **Hogyan licitáljuk:** Az adu megegyezése után egy **szokatlan, 5-ös szintű ugrás** egy új színben.  
+* **Példa (Egyszerű):** 1♠ \- 3♠ (Limit emelés) \- **5♣\!** (Exclusion: "Pikk lesz az adu. Treff voidom van, mondd a kulcslapjaid a treff ász kivételével").  
+* **Példa (Összetett):** 1♥ \- 2NT (Jacoby) \- 3♦ (Káró egyke/hiány) \- 4♥ (Rossz, sign-off) \- **5♣\!** (Az erős nyitó treff Exclusiont mond; a 3♦ csak puhatolózás volt).  
+* **Válaszok:** A válaszoló a sima 1430 lépcsőket használja, de úgy tesz, mintha az Exclusion szín ásza nem létezne a pakliban (ha mégis nála van, azt zérónak értékeli).
+
+### **Void válaszok 1430-ban**
+
+Ha a *segítőnek* van színhiánya (nem a kérdezőnek), az alábbi módon jelezheti a Kickbackre:
+
+### **Adu dáma megkérdezése RKC-ra érkezett válasz után**
+
+Az RKC-t licitáló megkérdezheti az adu dámát is a legolcsóbb új színnel. Válasz:
+
+* Adu szín visszahívása: Nincs nálam.  
+* 5NT: Itt a dáma ÉS nincs másik színből király.  
+* Bármelyik nem adu szín: Itt a dáma ÉS a licitált színből a király.
+
+### **Gerber (szanra adott) ász- és királykérdés**
+
+💡 **EZ GYAKORLATILAG KICKBACK SZAN UTÁN\!** Csak 1NT / 2NT nyitásra lehet mondani. Cél: meg lehessen állni 4 vagy 5 szanon, ha nincs slem. A **4♣** a Gerber ászkérdés (Válaszok: 4♦=0/4, 4♥=1, 4♠=2, 4NT=3). Az **5♣** a királykérdés.
+
+### **Ha közbeszóltak az ászkérdésre – DEPO**
+
+DEPO \= Double \= Even, Pass \= Odd.
+
+* Kontra (X): 0, 2 vagy 4 ász (Páros \- Even).  
+* Passz: 1 vagy 3 ász (Páratlan \- Odd).
+
+## **Overcallok és kompetitív licitek**
+
+A cél, hogy kompetitív licit alakuljon ki: vagy nekünk érje meg játszani, vagy az ellenfelet rávenni magasabb szinten való megállásra.
+
+### **Áttekintő pont-diagram**
+
+### **Take-out Double**
+
+12–15 (11+) pont, 3-3 minden be nem mondott színből. A partnernek kötelező válaszolnia (passz: 0-6 pont penalty, alacsony szín: 0-9, ugrás színben: 10-12, cue bid: GF).
+
+### **\[REVÍZIÓ\] Power Double (Erős Kontra, 16+ HCP)**
+
+A standard 12-15 pontos Take-out Double mellett létezik a "Power Double" (16+ ponttal). Ennek ereje a *második körben* derül ki. **Licitsorozat:** 1♦ (Ellenfél) \- **Kontra (Te)** \- Passz \- 1♠ (Partner, gyenge 0-9) \- Passz \- **?** **Második licited:**
+
+* **Új szín (pl. 2♥):** 16-18 pont, erős 5+ lapos kőr.  
+* **1NT:** 19-21 HCP, balanced eloszlás, biztos fogás a káróban (az ellenfél színében).  
+* **2NT ugrással:** 22-24 HCP, balanced, fogás a káróban.  
+* **Partner színének emelése (2♠ vagy 3♠):** 16+ pont és minimum 4 lapos fitt a partner (pikk) színében.
+
+### **\[REVÍZIÓ\] Újranyitó kontra (Reopening Double)**
+
+Mikor használjuk? A licit kezd "elhalni" az 1-es szinten (Példa: 1♣ \- Passz \- Passz \- **X\!**).
+
+* **Lényege:** Az induló partnere passzolt, azaz neki alig van pontja (0-5). Ez azt jelenti, hogy a mi oldalunkon megvannak a pontok (gyakran 20-22 pont együttesen), csak a te partnerednek olyan lapja volt (csapda passz, vagy nagyon lapos rossz eloszlás), amivel nem tudott rögtön közbeszólni.  
+* **Követelmény:** Maximum 8-14 pont és **rövidség** az ellenfél által megnyitott színben, hogy a partnered bármit mond, jó legyen neked.  
+* **Válaszok a passzoló partner részéről:**  
+  * *Legolcsóbb szín bemondása:* Gyenge, továbbra sincs sok pontja (0-8).  
+  * *Ugrás színben:* Invitáló (9-11 pont).  
+  * *Passz:* Ez az úgynevezett **Büntető Passz (Penalty Pass)**. Akkor húzza meg a partner, ha az ellenfél induló színéből rettentő hosszú, gyönyörű lapja van, amivel alacsony szinten, kontrázva akarja megbuktatni a felvevőt\!
+
+### **Negatív kontra (overcaller partnereként)**
+
+Lásd a *"Segítő szabályai \- Ha az ellenfél közbeszólt"* szakasznál, pontosan 4 lapos másik nemest ígér.
+
+### **\[REVÍZIÓ\] Michael's Cue bid & Unusual 2NT vs. Védekezés (Unusual vs Unusual)**
+
+**Michael's Cue bid (pl. 1♣ \- 2♣):** 5-5 a nemesekben (ha minor volt a nyitás), vagy 5-ös a másik nemes és 5-ös az egyik minor (ha nemes volt a nyitás). 10+ pont. **Unusual 2NT (pl. 1♠ \- 2NT):** A két leggyengébb be nem mondott szín (jellemzően a két minor) 5-5 lapos fittje. 10+ pont.
+
+**Védekezés az Unusual 2NT ellen (Ha ők mondják ránk):** Példa: Mi nyitunk 1♠-t, erre az ellenfél bemondja a 2NT-t (két alsó). A segítő válaszai:
+
+* **Kontra (X):** Büntető szándék. 10+ HCP-je van, és meg tudja fogni az ellenfél alsóit. Az ellenfelek nagy zűrbe kerültek.  
+* **Alsó Cue-bid (3♣):** Invitáló emelés a mi nemesünkben (Limit raise in Spades). Ha a nyitónak nem tetszik, egyszerűen mond egy 3♠-t (Sign-off).  
+* **Magasabb alsó Cue-bid (3♦):** Game Forcing (GF) emelés a mi nemesünkben.
+
+### **\[REVÍZIÓ\] Védekezés 1NT indulás ellen – Cappelletti**
+
+A Cappelletti (1NT nyitás elleni közbeszólás) válaszai és a megfelelő verseny-folytatás:
+
+| Cappelletti overcall | Licit | Segítő válasza |
+| :---- | :---- | :---- |
+| Egyszínű kéz (11-14p) | **2♣** | A segítő kötelezően (Relay) **2♦**\-t mond. Az overcaller erre bemondja az 5+/6+ lapos igazi színét. |
+| Mindkét nemes (5-4 v. 4-5) | **2♦** | A segítő bemondja azt a nemest, amelyikből több van (Pass/Correct). Ha egyenlő (pl. 3-3), **2♥**\-t mond. |
+| Kőr és egy Alsó (5-5) | **2♥** | A segítő, ha szereti a kőrt, passzol. Ha gyűlöli (0-1 lap), **2NT**\-vel megkérdezi, mi az alsó szín. |
+| Pikk és egy Alsó (5-5) | **2♠** | Mint fent, pikk preferenciával. Gyűlölet esetén 2NT kérdezi az alsót. |
+
+## **Egyebek – egyéb konvenciók**
+
+### **The Rule of 44**
+
+Stop 2♣-vel akkor is lehet indulni, ha nincs 21 pont, de van 4 biztos ütés (pl. 2 ász és 2 király egy színből) és maximum 4 kiadó. Javasolt minimum 18 HCP.
+
+## **Ellenjáték (jelzések)**
+
+Mi az **upside-down** konvenciókat használjuk.
+
+### **Attitude (upside-down)**
+
+* **Encourage (bátorítás):** kicsit dobok, majd nagyot.  
+* **Discourage (elbátortalanítás):** nagyot dobok, majd kicsit.
+
+### **Count (upside-down)**
+
+* **Páros:** kicsi lapot dobsz.  
+* **Páratlan:** nagy lapot dobsz. *(Szannál az első nem honor ütésnél a kicsi lap countot, nem attitude-öt ad).*
+
+### **Suit-preference**
+
+Kicsi lap \= olcsóbb színre válts. Nagy lap \= drágább színre válts.
+
+## **Slem- és game-erő megbeszélése**
+
+### **The Law of Total Tricks**
+
+Kompetitív licitnél az aduszám határozza meg a biztonságos szintet (8 adu \= 2-es szint, 9 adu \= 3-as szint, stb.). Segít a gyors preempt kizárásoknál.
+
+### **\[REVÍZIÓ\] Bergen Raises**
+
+Marty Bergen rendszere a **pontosan 4 lapos** nemes-supportot (fittet) fejezi ki, 1♥ vagy 1♠ nyitás után. Erősen épít a Law of Total Tricks-re.
+
+* **1M – 3♣:** Gyenge mass-emelés (6–9 HCP, 4 lapos adu). Konstruktív, preemptív.  
+* **1M – 3♦:** Invitáló mass-emelés (10–12 HCP, 4 lapos adu).  
+* **1M – 3M:** Preempt zárás (0–5 HCP, 4 lapos adu). Gyors szintemelés az ellenfél elnémítására.  
+* **1M – 2NT (Jacoby 2NT):** Game Forcing (13+ HCP, 4+ lapos adu).
+
+### **\[REVÍZIÓ\] Drury Konvenció (Passzolt segítővel)**
+
+Ha 3\. vagy 4\. helyen ülsz, a partnered nyithat egy "könnyített" (10-11 pontos), taktikai 1♥ / 1♠ licittel. Ha te már passzoltál (tehát max 11 pontod van), de van **3+ lapos fited** a nemesében és invitáló (10-11) kezed, **nem emelhetsz rögtön 3-as szintre**, mert el fogtok bukni, ha a partner könnyített nyitást csinált\! **Megoldás: A Reverse Drury (2♣)**
+
+* A passzolt segítő **2♣** válasza a nemesre: *"Partner, 10-11 pontom van és 3+ támogatásom."*  
+* A nyitó válasza a 2♣-re:  
+  * **2♦:** *"Igazi, teljes értékű nyitásom van (12+ pont), mehetünk Gémre\!"*  
+  * **A saját nemesének megismétlése (2♥/2♠):** *"Bocs, ez csak könnyített nyitás volt, álljunk meg itt, nincs Gém."*
+
+### **\[REVÍZIÓ\] Western Cue bid (Stopper-kérés)**
+
+Mikor a licit során egyértelmű, hogy **3NT** a célunk, de van egy "veszélyes" szín az ellenfélnél, amiben nincs fogásunk (stopperünk), a legokosabb, amit tehetünk: **Licitáljuk be az ellenfél színét\!**
+
+* **Példa:** Észak 1♠ \- Kelet 2♣ \- Dél 2♦ \- Nyugat Passz \- Észak **3♣\!**  
+* **Jelentés:** *"Partner, a te káróddal és az én pikkemmel 3NT a gémünk, de NINCS treff stopperem. Neked van?"*  
+* **Válasz:** Ha van stoppere, mond 3NT-t. Ha nincs, folytatja a licitet (pl. bemondja Észak pikkjét).  
+* **Fontos különbségtétel:** A Western Cue mindig egy *későbbi, reagáló* fázisban történik. Ha *azonnal*, az első adandó alkalommal licitálod rá az ellenfél színére a saját licitjét (pl. 1♥ \- 2♥), az a Michael's Cue bid (két színű 5-5).
+
+### **Splinter bids**
+
+Dupla ugrás új színben: egy van a licitált színből (singleton) és 12+ pontot ígér. Slem kutatás.
+
+### **Fourth suit forcing (Negyedik szín forcing)**
+
+Cél: ne kelljen a negyedik szín ismerete nélkül 3NT-t játszani – mondj valami extrát a shape-edről. Feltétel: legalább 13 pont segítőként (GF).
+
+## **Pontozás**
+
+### **Sebezhetőség (vulnerability) – licitkezdő szerint**
+
 | Licitkezdő | Sebezhetőség |
-|---|---|
+| :---- | :---- |
 | North (N) | mindenki mans |
 | East (E) | N/S mans, W/E bell |
 | South (S) | N/S bell, W/E mans |
 | West (W) | mindenki bell |
 
-### Ütésenkénti pontok
+### **Ütésenkénti pontok**
+
 | Vállalás | Ütésenkénti érték |
-|---|---|
+| :---- | :---- |
 | Nem nemes (♣, ♦) | 20 pont/ütés |
 | Nemes (♥, ♠) | 30 pont/ütés |
 | Szan (NT) | Első ütés: 40 pont; további ütések: 30 pont |
 
-### Bónuszok teljesítésért (mans / bell)
-| Vállalás | mans / bell |
-|---|---|
-| Sima (nem game) | 50 / 100 |
-| Game | 300 / 500 |
-| Kis slem | 500 / 750 (a game bónuszon felül) |
-| Nagy slem | 1000 / 1500 (a game bónuszon felül) |
+### **\[REVÍZIÓ\] Bónuszok teljesítésért (mans / bell)**
 
-Megjegyzés: az eredeti dokumentum „250 / 375”-öt írt; a hivatalos bridge szabályok szerinti game-bónusz 300 / 500. (Kidolgozandó – lásd Felülvizsgálati lista.)
+*A hivatalos nemzetközi (Rubber/Chicago/IMP) szabályok szerint:*
 
-### Bukás ütésenként (mans / bell)
-- Kontra nélkül: 50 / 100 pont/ütés.
+| Vállalás | mans (nem sebezhető) / bell (sebezhető) |
+| :---- | :---- |
+| Sima (nem game, azaz partial) | 50 / 100 pont |
+| Game prémium (Mans / Bell) | **300 / 500 pont** |
+| Kis slem prémium (A game bónuszon FELÜL) | **500 / 750 pont** |
+| Nagy slem prémium (A game bónuszon FELÜL) | **1000 / 1500 pont** |
 
-### Kontra hatása
-- Megduplázza az alap ütések és a bukások értékét. Teljesítéséért 50/100 pont jár (insult bonus).
-- Nem duplázza a gém-, kis- és nagyszlem-prémiumokat.
-- **Példák:**
-  - Pl. 1: Belben Észak vállalt 4♠-t kontrázva, amiből 2 ütést nem teljesített: 2 × 100 (alap pont bukásért) × 2 (kontra szorzó) = 400 pont az ellenfélnek.
-  - Pl. 2: Belben Észak vállalt 4♠-t kontrázva, és kettővel túlteljesítette (6 pikk): 6 × 30 × 2 + 100 (kontra prémium) + 500 (bel game prémium).
-  - Pl. 3: Mansban Kelet vállalt 4♦-t kontrázva, amit teljesített: 4 × 20 × 2 + 50 (kontra prémium) + 50 (mans nem-game teljesítési prémium).
+### **Bukás ütésenként (mans / bell)**
 
-### Rekontra hatása
-- Négyszerezi az alap ütések és a bukások értékét. Teljesítésért 100/200 pont jár. Nem négyszerezi a gém-, kis- és nagyszlem-prémiumokat.
-- **Példák:**
-  - Pl. 1: Belben Észak vállalt 4♠-t rekontrázva, amiből 2 ütést nem teljesített: 2 × 100 × 4 = 800 pont az ellenfélnek.
-  - Pl. 2: Belben Észak vállalt 4♠-t rekontrázva, és kettővel túlteljesítette: 6 × 30 × 4 + 200 (rekontra prémium) + 500 (bel game prémium).
-  - Pl. 3: Mansban Kelet vállalt 4♦-t rekontrázva, amit teljesített: 4 × 20 × 4 + 100 (rekontra prémium) + 50 (mans nem-game teljesítési prémium).
+* Kontra nélkül: 50 / 100 pont/ütés.
 
----
+### **Kontra hatása**
 
-## Játékmenet alapok
+* Megduplázza az alap ütések és a bukások értékét. Teljesítéséért 50/100 pont jár (insult bonus).  
+* Nem duplázza a gém-, kis- és nagyszlem-prémiumokat.
 
-### Impassz (finesse)
+### **Rekontra hatása**
+
+* Négyszerezi az alap ütések és a bukások értékét. Teljesítésért 100/200 pont jár. Nem négyszerezi a gém-, kis- és nagyszlem-prémiumokat.
+
+## **Játékmenet alapok**
+
+### **Impassz (finesse)**
+
 Tipikusan figura-lyuk kijátszása/kijátszatása.
 
 **Direkt impassz**
+
 Az ellenfél indul alacsony, beleteszed a dámádat. Ha az ellenfél kijön a királyával, ásszal viszed → bukta a királyt. Ha nem jön ki a királlyal, akkor elviszed a dámával, és megmarad az ászod… vagy bukod, de versenyen ezt mindenki megjátssza, és mindenki elbukik, tehát nincs probléma.
 
 **Indirekt impassz**
+
 A partnered színnel indul a királyod felé. A közöttetek lévő ellenfél vagy beleteszi az ászát (üt, és felnő a királyod), vagy nem teszi bele (és a királyod viszi az ütést). Így mindenképp győztesen hozod ki a királyod.
 
-### Hogyan nyitunk
-- **Szan ellen:** A leghosszabb színből a 4. legnagyobb lap, vagy honor sequence tetejéből (pl. KQJx).
-- **Színjáték ellen:** Színhiányból próbálunk nyitni (amiből 1-2 van), általában előbb a nagyobb lap. Erre normál körülmények között illik visszahívni a partner színét.
+### **Hogyan nyitunk**
 
-### Osztás és lejátszás
-- **Osztás:** óramutató járásával megegyezően, 1-1 laponként, 13-13-13-13 lapot.
-- **Lejátszás:** aki a licitet nyerő párosból a nyertes színt (vagy szant) először játékba hozta, az lesz a felvevő. A partnere lesz a terítő (asztal). A felvevőtől balra ülő ellenfél hív először; az asztal lepakol, és onnan folytatja a felvevő.
+* **Szan ellen:** A leghosszabb színből a 4\. legnagyobb lap, vagy honor sequence tetejéből (pl. KQJx).  
+* **Színjáték ellen:** Színhiányból próbálunk nyitni (amiből 1-2 van), általában előbb a nagyobb lap. Erre normál körülmények között illik visszahívni a partner színét.
 
----
+### **Osztás és lejátszás**
 
-## TODO – kidolgozandó és olvasnivalók
+* **Osztás:** óramutató járásával megegyezően, 1-1 laponként, 13-13-13-13 lapot.  
+* **Lejátszás:** aki a licitet nyerő párosból a nyertes színt (vagy szant) először játékba hozta, az lesz a felvevő. A partnere lesz a terítő (asztal). A felvevőtől balra ülő ellenfél hív először; az asztal lepakol, és onnan folytatja a felvevő.
+
+## **TODO – kidolgozandó és olvasnivalók**
+
 Az alábbi témák további elmélyítése javasolt; a hivatkozott források mindegyikét érdemes legalább egyszer átfutni.
 
-### Alapok és értékelés
-- Hand evaluation (length points, evaluation alapok): en.wikipedia.org/wiki/Hand_evaluation
+### **Alapok és értékelés**
 
-### Lebensohl és kapcsolódó konvenciók
-- Weak twos and Lebensohl: sydneybridgecentre.com/wp/weak-twos-and-lebensohl/
-- Lebensohl over Weak Two: bridgebum.com/lebensohl_over_weak_two.php
-- Lebensohl after 1NT: bridgebum.com/lebensohl_after_1nt.php
+* Hand evaluation (length points, evaluation alapok): en.wikipedia.org/wiki/Hand\_evaluation
 
-### Felvevő technikák (declarer play)
-- Trump coup és defense: mapiano.com/coup.htm
+### **Lebensohl és kapcsolódó konvenciók**
 
-### További olvasnivalók
-- WNT konvenciók: bridgewinners.com/article/view/5431-convention-after-wnt/
-- Andrew Robson – Tips for Intermediates: andrewrobson.co.uk/article/tips_for_intermediates/2783
+* Weak twos and Lebensohl: sydneybridgecentre.com/wp/weak-twos-and-lebensohl/  
+* Lebensohl over Weak Two: bridgebum.com/lebensohl\_over\_weak\_two.php  
+* Lebensohl after 1NT: bridgebum.com/lebensohl\_after\_1nt.php
 
-### Cue bidek és slem-keresés
-- CUE BID BEÍRNI! (Western Cue bid külön szakaszt érdemel.)
-- Western Cue bid: bridgebum.com/western_cue_bid.php
-- Splinters (részletesen): bridgebum.com/splinters.php
-- Slam-seeking conventions: en.wikipedia.org/wiki/Slam-seeking_conventions
+### **Felvevő technikák (declarer play)**
 
-### BBO referencia (AdvGIB 2/1)
-- GIB system notes: bridgebase.com/doc/gib_system_notes.php
+* Trump coup és defense: mapiano.com/coup.htm
 
-### Bergen raises és Unusual elleni védekezés
-- Bergen raises: bridgebum.com/bergen_raises.php
-- Defense to Unusual 2NT: bridgebum.com/unusual_vs_unusual.php
+### **További olvasnivalók**
 
-### Egyéb feljegyzés
-- Michael vs. 2NT-re gyengébb szín cue bid → erősebb szín a negyedik színből 5+ (ezt át kell fogalmazni a megfelelő szakaszba).
+* WNT konvenciók: bridgewinners.com/article/view/5431-convention-after-wnt/  
+* Andrew Robson – Tips for Intermediates: andrewrobson.co.uk/article/tips\_for\_intermediates/2783
+
+### **Cue bidek és slem-keresés**
+
+* Splinters (részletesen): bridgebum.com/splinters.php  
+* Slam-seeking conventions: en.wikipedia.org/wiki/Slam-seeking\_conventions
+
+### **BBO referencia (AdvGIB 2/1)**
+
+* GIB system notes: bridgebase.com/doc/gib\_system\_notes.php
+
+### **Egyéb feljegyzés**
+
+* Michael vs. 2NT-re gyengébb szín cue bid → erősebb szín a negyedik színből 5+ (ezt át kell fogalmazni a megfelelő szakaszba).

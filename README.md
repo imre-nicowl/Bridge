@@ -560,13 +560,70 @@ Ha a segítőnek **Game Forcing** keze van (10+ pont) és **5-4 eloszlása** a n
 
 Feltételek: 1NT-re 10+ HCP, 2NT-re 4–5 HCP, és legalább egy 3-as hosszú nemes.
 
-<!-- IMAGE PLACEHOLDER: 5. ábra – Puppet Stayman válasz-mátrix (1NT → 3♣ vagy 2NT → 3♣). -->
+**Konvenció lényege:** A Puppet Stayman *5-ös* és *4-es* nemest is keres a nyitónál (a sima Stayman csak 4-est). Hasznos, amikor 5-3 fit-et szeretnél megtalálni.
+
+**Lépés 1 – A nyitó válasza a 3♣-re:**
+
+| Nyitó licit | Jelentése |
+|---|---|
+| **3♦** | "Van *legalább* egy 4-es nemesem (de nincs 5-ösöm)." |
+| **3♥** | "5 kőröm van." |
+| **3♠** | "5 pikkem van." |
+| **3NT** | "Nincs 4+ lapos nemesem." |
+
+**Lépés 2 – Ha a nyitó 3♦-t mondott (van valamelyikből 4 lap), a kérdező folytatja:**
+
+| Kérdező licit | Jelentése |
+|---|---|
+| **3♥** | "*Pikkem* van 4 lap (nem kőröm!) — kérdezem, van-e neked 4 pikked." → ha a nyitónak van 4 pikk: **4♠**, ha nincs: **3NT** |
+| **3♠** | "*Köröm* van 4 lap (nem pikkem!) — kérdezem, van-e neked 4 köröd." → ha a nyitónak van 4 kőr: **4♥**, ha nincs: **3NT** |
+| **3NT** | "4-4 nemesem van, vagy nem érdekel a fit." |
+
+**Lépés 3 – Ha a nyitó 3♥/3♠-t mondott (5 lapos nemes), a kérdező folytatja:**
+
+| Kérdező licit | Jelentése |
+|---|---|
+| **Egy szinttel emelés** (4♥/4♠) | 3+ lap fit, gémszint, nincs slam-érdeklődés |
+| **3NT** | Nincs 3 lapos fit, NT-ben akarom játszani |
+| **4-es szintű új szín** | Slam-cue (kontroll), fit van |
+| **4NT** | Kickback indul (ha a fit megerősíthető) |
+
+> 💡 **Mikor használd?** 1NT/2NT nyitásra GF + esetleges 5-3 nemes fit-keresés. **Feltétel:** legalább egy 3+ lapos nemes.
 
 #### Jacoby transzfer I. és II. (1NT → 2♦ kőrre, 1NT → 2♥ pikkre)
 
 Feltétel: 5 vagy több lap a színben. Az erős kéz (nyitó) fogadja a transzfert (2♥/2♠), így ő lesz a felvevő.
 
-<!-- IMAGE PLACEHOLDER: 6. ábra – Jacoby transzfer válaszok (sima elfogadás, szuper-elfogadás, három-szintes szuper-elfogadás). -->
+**Lépés 1 – 1NT → 2♦ (kőr transzfer) után a nyitó válasza:**
+
+| Nyitó licit | Jelentése | Mikor? |
+|---|---|---|
+| **2♥** | Sima elfogadás | Alapeset, bármilyen erő (15–17 HCP) |
+| **2♠** | "Big" elfogadás (ritkán használt) | Max + 4 kőr + 5+ pikk (kétszínű) |
+| **2NT** | Szuper-elfogadás NT-ben | Max (17 HCP), pontosan 2 kőr (doubleton), kiegyensúlyozott — "ne menj tovább, ha gyenge vagy" |
+| **3♣ / 3♦ / 3♠** | "Source of tricks" szuper | Max + 4 kőr + 5-ös ütésforrás a mondott színben (3♠ = vacuum/honor-doubleton-szín) |
+| **3♥** | Klasszikus szuper-elfogadás | Max (17 HCP) + 4 kőr, kiegyensúlyozott |
+| **4♥** | Megelőző / lezáró | Max + 4 kőr + nagyon offenzív (hosszú szín, kevés HCP de sok shape) |
+
+**Lépés 2 – Ugyanez 1NT → 2♥ (pikk transzfer) után:**
+
+| Nyitó licit | Jelentése |
+|---|---|
+| **2♠** | Sima elfogadás |
+| **2NT** | Max + 2 pikk doubleton, kiegyensúlyozott |
+| **3♣ / 3♦ / 3♥** | Max + 4 pikk + ütésforrás a megnevezett mellékszínben |
+| **3♠** | Klasszikus szuper-elfogadás (max + 4 pikk) |
+| **4♠** | Megelőző max + 4 pikk + nagyon offenzív |
+
+**Lépés 3 – A válaszadó folytatása szuper-elfogadás után:**
+
+| Válaszadó licit | Jelentése |
+|---|---|
+| Passz | "Az 5 lapom + a maxod elég a gémhez? Nem, kihagyom." (csak 3♥/3♠ után) |
+| **3NT** / **4NT** | Kvantitatív választás: NT vagy színben (a partner választ) |
+| **Új szín 4-es szinten** | Cue-bid → slam-érdeklődés |
+| **4♥/4♠** | Lezáró gémben (signoff) |
+| **4NT** | Kickback (a transzferelt nemes az adu) |
 
 **Szuper-elfogadás:** Ha a nyitónak 4+ lapja van a segítő nemeséből és maximuma (16–17 HCP), nem 2-es, hanem **3-as szinten** fogadja a transzfert. Ez biztat a 4-es szintű gémre.
 
@@ -578,7 +635,24 @@ A kontra a Staymant jelenti.
 
 **Példa:** 1NT – 2♦ – X (Stayman: 8+ pont, legalább egy 4-es nemes).
 
-<!-- IMAGE PLACEHOLDER: 7. ábra – Stayman-kontra 1NT elleni 2-szint közbeszólásra. -->
+**Helyzet:** 1NT – (2X) – ? — ahol a 2X egy 2-szintű természetes közbeszólás (pl. 2♦, 2♥ vagy 2♠).
+
+| A válaszadó licitje | Jelentése |
+|---|---|
+| **Passz** | 0–7 HCP, nincs jó megoldás |
+| **X (kontra)** | **Stayman-kontra**: 8+ HCP, *legalább egy* 4-es nemes (a "Stayman a régi szerepben") — a nyitó a saját 4-eseit licitálja |
+| **2-es szinten új szín** | 0–7 HCP, 5+ lap, lezáró (NF) |
+| **2-es szinten cue** (a közbeszólt szín) | Nincs használatban (kontra van helyette) |
+| **2NT** | Lebensohl relay → 3♣ átkérés (lásd 8. ábra) |
+| **3-as szinten új szín** | 5+ lap, GF (Lebensohl nélkül) |
+| **3-as szinten cue** | "Van stoppered?" — GF |
+| **3NT** azonnal | GF, NINCS stopper a közbeszólt színben |
+
+**Példa:**
+```
+1NT – (2♦) – X (Stayman, 8+ HCP, van 4-es nemes) – Passz
+2♥ (nyitó: "van 4 köröm") – Passz – 4♥ (gém)
+```
 
 #### Lebensohl 1NT közbeszólás ellen
 
@@ -596,7 +670,43 @@ Pont szerint:
   - Lebensohl → 3NT: **VAN** stopper, nincs 4 nemes.
   - Közvetlen 3NT: **NINCS** stopper, nincs 4 nemes.
 
-<!-- IMAGE PLACEHOLDER: 8. ábra – Lebensohl-mátrix 1NT-re adott 2-szint nemesközbeszólás ellen. -->
+**Helyzet:** 1NT – (2♥/2♠) – ?
+
+**Alapszabály:** *Slow shows, fast denies* — a 2NT-en át menő (lassú) út stoppert mutat, a közvetlen (gyors) út tagadja.
+
+**Az összes lehetséges licit:**
+
+| A válaszadó licitje | Erő | Forcing? | Stopper? | Mit jelent? |
+|---|---|---|---|---|
+| **Passz** | 0–7 | NF | – | Nincs jó megoldás |
+| **2-es új szín** (csak 2♥ után 2♠) | 0–7 | NF | – | 5+ lap, lezáró |
+| **X (kontra)** | 8+ | Forcing 1 körig | – | Penalty-irányultságú / cooperative |
+| **2NT** | 0–7 (gyenge) **vagy** 8–9 (inv) | Forcing 3♣-re | – | Lebensohl relay – a következő licit jelez |
+| **3♣ / 3♦** (közvetlen) | 10+ | GF | – | 5+ lap, GF, **NINCS stopper** |
+| **3♣ / 3♦ Lebensohl után** | 8–9 | NF | – | **Invitálás**, 5+ lap |
+| **3-as cue** (a közbeszólt szín) | 10+ | GF | Kérdez | "Van stoppered? → 3NT igen, más nem" |
+| **3-as cue Lebensohl után** | 10+ | GF | Kérdez | (Ritkábban használt) |
+| **3♥/3♠** (ha másik nemes) | 10+ | GF | – | 5+ lap a másik nemesből, GF |
+| **3NT közvetlen** | 10+ | – | **NINCS** | GF, nincs stopper, nincs 4-es másik nemes |
+| **3NT Lebensohl után** | 10+ | – | **VAN** | GF, van stopper, nincs 4-es másik nemes |
+| **4♣ / 4♦** | 10+ | GF | – | Texas-jellegű transzfer / két-színű |
+
+**Memóriasegítő:**
+
+```
+                    1NT – (2♥) – ?
+                         │
+   ┌─────────────────────┼─────────────────────┐
+  0–7                   8–9                    10+
+   │                     │                       │
+  Passz                 2NT → 3♣ → ?           Közvetlen
+  vagy 2♠               (Lebensohl)               │
+                         │                  ┌─────┴─────┐
+                       3♣/3♦                Cue        3NT
+                       (inv)              (Stoppert    (NINCS
+                       3NT                 kérdez)      stopper)
+                       (VAN stopper)        
+```
 
 ---
 
@@ -617,17 +727,34 @@ A gyenge 2-es 6–10 pontot és pontosan 6-lapos erős színt mutat. (Lásd a [p
 
 | Induló licitje | Jelentés |
 | :---- | :---- |
-| 3♣ | Gyenge kéz (5–7 pont), egy a top 3 honőr közül a színében. |
-| 3♦ | Gyenge kéz (5–7 pont), kettő a top 3 honőr közül. |
-| 3♥ | Jó kéz (8–10 pont), egy a top 3 honőr közül. |
-| 3♠ | Jó kéz (8–10 pont), kettő a top 3 honőr közül. |
-| 3NT | Jó kéz (8–10 pont), mindhárom top honőr. |
+| 3♣ | Gyenge kéz (5–7 pont), egy a top 3 honor közül a színében. |
+| 3♦ | Gyenge kéz (5–7 pont), kettő a top 3 honor közül. |
+| 3♥ | Jó kéz (8–10 pont), egy a top 3 honor közül. |
+| 3♠ | Jó kéz (8–10 pont), kettő a top 3 honor közül. |
+| 3NT | Jó kéz (8–10 pont), mindhárom top honor. |
 
 ### B) Válaszok közbeszólás esetén – Lebensohl gyenge 2-es ellen
 
 Ha az ellenfelek közbeszóltak a gyenge 2-esre adott takeout double-re, akkor a Lebensohl relay-t használjuk.
 
-<!-- IMAGE PLACEHOLDER: 9. ábra – Lebensohl relay gyenge 2-es elleni takeout double után. -->
+**Helyzet:** **Ellenfél** gyenge 2-es nyitott → **partner** takeout-X → **ellenfél** passz → **te** válaszolsz, és pl. 8+ HCP-d van.
+
+**Példa:** (2♥) – X – (Passz) – ?
+
+| Te licited | Erő | Forcing? | Stopper? | Jelentése |
+|---|---|---|---|---|
+| **Passz** | – | – | – | Penalty pass (jó kőr-tartás) |
+| **2♠** | 0–7 | NF | – | 4+ pikk, gyenge |
+| **3♣ / 3♦** (közvetlen) | 8+ | F | – | 4+ lap, **konstruktív/inv+** |
+| **2NT** | 0–7 | F | – | Lebensohl relay → 3♣ → kérdés/lezárás |
+| **3♣ után gyenge folytatás** (passz / 3♦ lezárás) | 0–7 | NF | – | Gyenge kéz, menekülés |
+| **3♥ (cue, közvetlen)** | 10+ | GF | Kérdez | "Stayman jellegű" — kérdezi a másik nemest / stoppert |
+| **3♥ (cue, Lebensohl után)** | 10+ | GF | Kérdez | Ugyanaz, de van stopper-implikáció |
+| **3NT** (közvetlen) | 10+ | – | NINCS | GF, nincs stopper |
+| **3NT** (Lebensohl után) | 10+ | – | VAN | GF, van stopper |
+| **3♠** | 10+ | GF | – | 5+ pikk, GF |
+
+**Memorizálási szabály:** *„Cheap and fast = no stopper, slow via 2NT = stopper."*
 
 ---
 
@@ -650,11 +777,43 @@ Ha az ellenfelek közbeszóltak a gyenge 2-esre adott takeout double-re, akkor a
 
 ### Az induló viszontválaszai a 2♦ negatív válaszra (2♣ → 2♦ → ?)
 
-<!-- IMAGE PLACEHOLDER: 10. ábra – Erős 2♣ → 2♦ után az induló folytatása (természetes új szín, NT-pontjelzések, 3-as szintű ugrás). -->
+**Helyzet:** 2♣ (22+ HCP / 9+ ütés erős nyitás) – 2♦ (negatív/várakozó válasz) – ?
+
+| Nyitó viszontválasz | Jelentés | Forcing? |
+|---|---|---|
+| **2♥** | 5+ kőr, 22+ HCP **vagy** ütésszám-nyitás | F-1 körig |
+| **2♠** | 5+ pikk, 22+ HCP | F-1 körig |
+| **2NT** | **22–24 HCP**, kiegyensúlyozott | NF (de a válaszadó folytathat) |
+| **3♣** | 5+ treff, 22+ HCP | GF |
+| **3♦** | 5+ káró, 22+ HCP | GF |
+| **3♥ / 3♠** | Ugró nemes — 8+ lapos szín / nagyon erős színes kéz (ritkábban: solid suit) | GF |
+| **3NT** | **25–27 HCP**, kiegyensúlyozott — `gamble` jellegű (válaszadó passzolhat) | NF |
+| **4♣ / 4♦** | Splinter / kétszínű (ritkán; gyakran 5-5-ös) | GF |
+| **4♥ / 4♠** | Lezáró gém — solid 8-9 lapos szín | NF |
+
+**Folytatás 2NT (22–24 bal) után:** Pontosan úgy, mint egy 2NT nyitás után — Stayman (3♣), Jacoby transzfer (3♦/3♥), Puppet (?), stb. A 22–24-es tartomány gémszintet kényszerít, ha a válaszadónak 4+ HCP-je van.
+
+**Folytatás 3NT (25–27 bal) után:** Hasonló rendszer, de még magasabb szintről. A válaszadó kvantitatív 4NT-vel slam-érdeklődést jelez (26+ kombinált).
 
 ### Az induló viszontválaszai a 2♥ dupla negatív válaszra (2♣ → 2♥ → ?)
 
-<!-- IMAGE PLACEHOLDER: 11. ábra – Erős 2♣ → 2♥ (dupla negatív) után az induló folytatása. -->
+**Helyzet:** 2♣ – 2♥ (**dupla negatív**: 0–3 HCP, **nincs ász és nincs király**) – ?
+
+> ⚠️ Ez a válasz egyértelműen lerontja a slam-esélyt — a nyitónak nem szabad túlságosan optimistának lennie.
+
+| Nyitó viszontválasz | Jelentés |
+|---|---|
+| **2♠** | 5+ pikk, GF (de slam már valószínűtlen) |
+| **2NT** | 22–24 HCP balansz — a partner gyakorlatilag passzolja, hacsak nem nagyon shape-es |
+| **3♣ / 3♦** | 6+ lap mellékszín, GF — partner egyszínű választ adhat |
+| **3♥** | 6+ kőr, GF (kőr az adu — de óvatosan a slammal) |
+| **3♠** | 6+ pikk, GF |
+| **3NT** | 25–27 HCP balansz — passzolható |
+| **4♣ / 4♦** | Splinter / kontroll-cue (ritkábban) |
+| **4♥ / 4♠** | Lezáró gém — solid 8+ lapos szín, slam nem reális |
+| **4NT** | Kvantitatív 6NT-meghívás (a partner passzol) |
+
+**Gyakorlati tanács:** dupla negatív után gondolj a gémben-marasztalás stratégiájára — slam-vadászat csak akkor, ha a kezed önállóan 11+ ütésű (pl. solid 8+ lapos szín + 2-3 oldalütés).
 
 ### Egyéb megfontolások az erős 2 treff után
 
@@ -727,7 +886,7 @@ Mi **Kickback**-et játszunk (a Minorwood helyett is ezt alkalmazzuk egységesen
 
 Ha a *segítőnek* van színhiánya (nem a kérdezőnek), az alábbi módon jelezheti a Kickbackre:
 
-![Induló viszontválaszai 1♣ – 2♣ után (inverted minor folytatás)](https://github.com/imre-nicowl/Bridge/blob/main/Pics/void_RKCB.png)
+![Void-válaszok lépcsőszerkezete az RKC 1430-ra](https://github.com/imre-nicowl/Bridge/blob/main/Pics/void_RKCB.png)
 <!-- IMAGE PLACEHOLDER: 12. ábra – Void-válaszok lépcsőszerkezete az RKC 1430-ra (5NT = páros void számú kulcslap, 6 új szín = void abban a színben, 6 adu = páratlan void). -->
 
 ### 5NT Specific King Ask (Királykérdés Kickback után)
@@ -794,12 +953,30 @@ A cél, hogy kompetitív licit alakuljon ki: vagy nekünk érje meg játszani, v
 
 ### Áttekintő pont-diagram
 
-![Induló viszontválaszai 1♣ – 2♣ után (inverted minor folytatás)](https://github.com/imre-nicowl/Bridge/blob/main/Pics/overcall.png)
+![Áttekintő pont-diagram: overcall / takeout double / 1NT overcall / cue bid mátrix.](https://github.com/imre-nicowl/Bridge/blob/main/Pics/overcall.png)
 <!-- IMAGE PLACEHOLDER: 13. ábra – Áttekintő pont-diagram: overcall / takeout double / 1NT overcall / cue bid mátrix. -->
 
 ### Szín bemondása (overcall)
 
-<!-- IMAGE PLACEHOLDER: 14. ábra – Overcall pont- és hossz-mátrix (8–17 HCP, 5+ lap, jó szín-minőség). -->
+| Helyzet | Pont | Hossz | Szín-minőség | Megjegyzés |
+|---|---|---|---|---|
+| **1-es szintű overcall** (pl. 1♣ – 1♠) | 8–17 HCP | 5+ lap | 2 honor: KQxxx, AJxxx, KJTxx | Legszélesebb tartomány |
+| **2-es szintű overcall** (pl. 1♠ – 2♣) | 11–17 HCP | 5+ lap (általában 6) | 3 honor vagy 6+ lap: KQJxx(x), AKxxxx | Diszciplináltabb |
+| **Ugró overcall** (1♣ – 2♠) **gyenge** | 6–10 HCP | 6+ lap | Jó szín (2 honor) | Modern stílus: **gyenge ugrás** = preemptív |
+| **Ugró overcall (klasszikus erős)** | 16+ HCP | 6+ lap | – | Csak speciálisan megállapodva |
+| **1NT overcall** (1♣ – 1NT) | **15–18 HCP** | balansz | Stopper a közbeszólt színben | A felső sáv ≈ erős 1NT nyitás |
+| **2NT overcall** (1♣ – 2NT) | – | – | – | **Unusual NT**: kétszínű (a 2 alsó / 2 alsó nem-licitált) |
+| **Cue-bid overcall** (1♣ – 2♣) | 16+ HCP | – | – | **Michaels**: kétszínű, lásd Michaels szakasz |
+| **Take-out X** | 12+ HCP | rövid közbeszólt szín | – | A három másik szín támogatása |
+
+**Példák:**
+
+```
+LHO: 1♣
+Te: KQ954 / 73 / KQT2 / 94  → 1♠ overcall (✓ 5 lap, 2 honor, 11 HCP)
+Te: AQ7 / KJ7 / KJ87 / Q97  → 1NT overcall (✓ 15 HCP, balansz, stopper)
+Te: KQJT98 / 7 / Q3 / K842  → 2♠ ugró overcall, ha gyenge-ugrást játszotok (6 lap, 9 HCP)
+```
 
 **Általános feltételek:**
 
@@ -843,7 +1020,33 @@ Ha az ellenfél 4 nemest nyit közvetlenül (pl. 4♥), a kontra **általában t
 
 > ⚠️ Ez NEM tisztán büntető — a partnernek el kell tudni dönteni passz / 4♠ / 5♣ / 5♦ között. 4♠ közbeszólás esetén már jellemzően penalty doubleról beszélünk, mert a saját 4♠ licit túl drága lenne.
 
-<!-- IMAGE PLACEHOLDER: 15. ábra – Take-out Double 4 nemes közbeszólás után. -->
+**Helyzet:** (4♥) – X – ? **vagy** (4♠) – X – ?
+
+| A kontra jellemzői (kontrázó) | Érték |
+|---|---|
+| HCP | **12+** (általában 14+) |
+| Hossz a kontrázott színben | 0–2 lap |
+| Hossz a többi 3 színben | **3+ minden színben** (ideális: 4-3-3-3 vagy 4-4-3-2) |
+| Erő | Cooperative — *nem* tisztán büntető |
+
+| Partner válasza (X-er partnere) | Mikor? |
+|---|---|
+| **Passz** | 4+ jó lap a kontrázott színben (penalty conversion) |
+| **4♠** (4♥ X után) | 4+ pikk, 0–8 HCP |
+| **5♣ / 5♦** | 5+ lap, 0–8 HCP |
+| **4NT** | Kétszínű mutatás vagy "válassz a két alsóból" |
+| **5♥** (4♥ X után, cue) | Kérdez slam felé / két-színű kéz |
+
+> ⚠️ **4♠ közbeszólás esetén** (vagyis (4♥) felett 4♠ overcall) a kontra már **penalty** — mert 4♠-t licitálni költséges lenne, így a kontra inkább büntető szándékú.
+
+| Helyzet | A kontra értelme |
+|---|---|
+| (4♥) – X | **Take-out** (cooperative) |
+| (4♠) – X | **Penalty** (gyengébb takeout, vagy "kártyák", a partner általában passzol) |
+| (4♣) – X | **Take-out**, 3-3-3 a többi színben |
+| (4♦) – X | **Take-out** |
+
+---
 
 ### Újranyitó kontra (Reopening Double)
 
@@ -869,13 +1072,47 @@ Akkor jön szóba, ha:
 
 **Példa:** 1♣ (Én) – Passz – 1♥ (Partner) – 1♠ (Ellenfél) – **X** = pontosan 3 kőröm van.
 
-<!-- IMAGE PLACEHOLDER: 16. ábra – Support Double mátrix (3 vs. 4 lapos partner-fit közbeszólás után). -->
+**Helyzet:** Te nyitottál nemest / alsót → partner 1-szintű új színt válaszolt → ellenfél *közbeszólt a partner színe felé* → te döntesz.
+
+**Példa-szekvencia:** 1♣ (én) – Passz – 1♥ (partner) – 1♠ (ellenfél) – **?**
+
+| Lapok száma a partner színében | Helyes licit | Jelentés |
+|---|---|---|
+| **3 lap** | **X** (Support Double) | "Pontosan 3 köröm van" — semleges erő (12–17 HCP) |
+| **4 lap** | **2♥** | "4 kőr fit, minimum (12–14 HCP)" |
+| **4 lap, erős** | **3♥** (ugró raise) | "4 kőr fit + max (15–17), invitációs" |
+| **4 lap, GF** | **4♥** | Lezáró gém |
+| **4 lap, slam-érdeklődés** | **Splinter** (3♠ pl.) | Rövidség + 4 kőr |
+| **Nincs 3+ kőr** | Természetes licit (1NT, 2♣, 2♦, X penalty, stb.) | Nincs fit |
+
+> 📌 **Magyarázat:** Mivel a 2♥ emelés *garantáltan* 4 lapos fitet ígér (Support Double rendszerben), a X-kontra az egyetlen módja a 3 lapos fit közlésére. Enélkül a partner nem tudná megkülönböztetni a 3 és 4 lapos fit-et.
+
+**Support Re-double (XX):** Ha az ellenfél *kontrázott* a partner válaszát (nem új színt mondott):
+- **XX** = pontosan 3 lapos fit a partner színében
+- **Raise (2♥)** = 4 lapos fit
 
 ### Two-suited Double
 
 Olyan kontra, ami **két konkrét színt** ígér. Általában csak speciálisan megbeszélt szekvenciákban van értelme — pl. ellenfél [Cappelletti](#védekezés-1nt-indulás-ellen--cappelletti) 2♥ overcall-jára (kőr + alsó) a kontra büntető, vagy a Cappelletti 2♦ (nemesek) kontrázása nemes-bizonytalanságot jelez.
 
-<!-- IMAGE PLACEHOLDER: 17. ábra – Two-suited double gyakori szekvenciái. -->
+| Szekvencia | A X jelentése |
+|---|---|
+| **(1♣) – X – (XX) – ?** Te X-eltél = **takeout** (klasszikus) | Eredeti X: 12+, 3+ a többi színben |
+| **(1NT) – X** | **Penalty / kártyák** (15+ HCP, főleg ász-király kombinációk) |
+| **(1NT) – (2♣ Cappelletti, egyszínű) – X** | **Penalty** (ők egyszínűt jeleznek, te 4+ trefföt jelzel) |
+| **(1NT) – (2♣ DONT, 5+ treff vagy 4-4 alsó-nemes) – X** | **Stayman/kártyák** (8+ HCP, 4-es nemes vagy büntetés) |
+| **(1NT) – (2♦ Cappelletti, nemesek) – X** | **Penalty** (4+ káró) |
+| **(1NT) – (2♥ Cappelletti, kőr+alsó) – X** | **Penalty kőrre** (4+ kőr — náluk valószínűleg shortness) |
+| **(1NT) – (2♠ Cappelletti, pikk+alsó) – X** | **Penalty pikkre** (4+ pikk) |
+| **1♥ – (2♥ Michaels, pikk+alsó) – X** | **Penalty** (4+ kőr, vagy ász-király az ellen-színekben) |
+| **1♣ – (2♣ Michaels, nemesek) – X** | **"Karták"**, általában a kőr+pikk *ellen* |
+| **1♥ – (X takeout) – XX** | Saját **erős XX**: 10+, nincs fit |
+| **(1♥) – 1♠ – (2♥) – X** | **Cooperative / responsive** (8+, nem tudja mit, kérdezi a partnert) |
+
+**A Two-suited double általános elve:** ha az ellenfél *kétszínű* konvenciót használ (Cappelletti, Michaels, DONT, Unusual NT), akkor a saját **X** és **cue-bid** specifikus üzeneteket kap:
+- **X**: kártyák / penalty az egyik konkrét színre
+- **Cue (alsó)**: gémforce, nincs stopper
+- **Cue (felső)**: gémforce, van stopper
 
 ### Negatív kontra (overcaller partnereként)
 
@@ -888,11 +1125,89 @@ Ha az ellenfél takeout double-t mondott a te nyitásodra, és te a partnered he
 - **Rekontra (XX):** 10+ HCP, *nincs* támogatás a partner színéből. Egy körig forcing; a következő licit pozitívan jellemző (büntető szándék, ha még egy alacsony lapot ki tudsz adni).
 - Egy körig kötelező, hogy a partner megszólaljon — a partner *nem* mondhat passzot, hacsak nem kontrázni akarja a hamarosan rákövetkező ellenfél licitet.
 
-<!-- IMAGE PLACEHOLDER: 18. ábra – Rekontra szekvenciái (azonnali XX vs. második körös XX). -->
+**A) Azonnali XX – partner takeout double-jét követően**
+
+**Helyzet:** Én 1♥ – (X takeout) – ?
+
+| Válaszadó licit | Erő | Jelentés |
+|---|---|---|
+| **Passz** | 0–5 | Nincs jó licit |
+| **1♠ / 1NT / 2♣ / 2♦** | 0–8 | Természetes, NF (a kontra "letörli" a megszokott jelentést) |
+| **2♥** (sima emelés) | 6–9 | 3+ kőr fit, konstruktív |
+| **3♥** (ugró emelés) | gyenge | 4+ kőr, preemptív (defenzív) |
+| **2NT** (Jordan / Truscott) | 10+ | 4+ kőr fit, GF |
+| **XX (rekontra)** | **10+ HCP** | **Nincs fit**, forcing 1 körig — büntető szándékkal "védjük meg" |
+| **4♥** | gyenge, shape-es | 5+ kőr, preemptív |
+| **Splinter (3♠, 4♣, 4♦)** | 10–13 | Rövidség + 4+ fit, GF |
+| **Cuebid (2♣?? vagy közvetlen 3♣ stb.)** | – | Speciális megállapodás |
+
+**Az XX (rekontra) utáni folytatás:**
+
+```
+1♥ – (X) – XX – (Passz / 1♠ / 1NT / 2♣ / 2♦)
+                       ↓
+                  Most a NYITÓ folytatja:
+                   ├─ Passz: "kontrázni szándékozom"
+                   ├─ Új színű licit: extra hossz, jelez
+                   └─ Saját szín ismétlése: 6+ lap
+```
+
+**B) Második körös XX – ellenfél közbeszólta a partnered színét**
+
+**Helyzet:** 1♥ – Passz – 1♠ – (2♥ közbeszólás) – ?
+
+| Nyitó (én) licitje | Jelentés |
+|---|---|
+| **Passz** | Minimum, nincs leírnivaló |
+| **X** | **Penalty** (4+ kőr a nyitónál — ritka, de erős) |
+| **2♠** | 3 lapos pikk-fit, konstruktív |
+| **3♠** | 4 lapos pikk-fit + max |
+| **3♣ / 3♦** | Új szín, 4+ lap, F |
+
+**C) Rekontra mint "kihívás" (SOS XX)**
+
+**Helyzet:** Partnert *büntető-kontrázták*, és én *menekülni* akarok:
+
+| Példa | Jelentés |
+|---|---|
+| 1NT – (X penalty) – ?? – (Passz) – **XX** | **SOS** (menekülés) — kérem a partnert, hogy válasszon szint |
+| 4♠ – (X) – Passz – (Passz) – **XX** | **Konfidens** (extra erő, nincs ki kell mászni) |
+
+**Memóriasegítő:**
+
+- **Azonnali XX** (saját nyitásom után) = **10+ HCP, nincs fit, forcing 1 körig**.
+- **Késleltetett XX / SOS XX** (3-as szint felett, vagy büntető-kontra után) = **menekülés** (gyenge, válassz színt!).
 
 ### Gyenge 2-re adott takeout double után – Lebensohl relay
 
-<!-- IMAGE PLACEHOLDER: 19. ábra – Lebensohl relay a saját gyenge 2-esünkre adott ellenféltől származó takeout double után. -->
+**Helyzet:** Én 2♥ (saját gyenge 2-es nyitás) – (X takeout) – ?
+
+| Válaszadó (partner) licitje | Erő | Forcing? | Jelentés |
+|---|---|---|---|
+| **Passz** | 0–5 | NF | Nincs jó licit, partner kicsi |
+| **2♠** | 0–7 | NF | 5+ pikk, lezáró |
+| **2NT** | 0–7 **vagy** 10+ | F-1 körig | **Lebensohl relay**: → 3♣ → ? |
+| **3♣ / 3♦** (közvetlen) | 8–11 | F | Természetes, konstruktív |
+| **3♥** (sima emelés) | 6–9 | NF | 3+ kőr fit, defenzív vagy konstruktív |
+| **3♠** (ugró) | 10+ | F (GF) | 6+ pikk + kőr-fit (komplex jelentés) |
+| **4♥** | gyenge | NF | Preemptív lezárás |
+| **XX (rekontra)** | 10+ | F | Penalty-irány, nincs fit |
+| **3NT** | 10+, balansz | – | Stoppert ígér, lezárás |
+
+**A 2NT Lebensohl folytatása (kötelező 3♣):**
+
+```
+2♥ – (X) – 2NT – (Passz/3♣) – 3♣ kötelező – (Passz) – ?
+                                              ↓
+                       Most a VÁLASZADÓ folytatja:
+                       ├─ Passz: gyenge, sign-off 3♣-ban
+                       ├─ 3♦/3♠: 6+ lap, sign-off
+                       ├─ 3♥ (cue): GF, fit-érdeklődés
+                       ├─ 3NT: 10+, balansz, stopperrel
+                       └─ 4♥: 4+ kőr fit, slam-irány
+```
+
+> 💡 **Magyarázat:** a saját gyenge 2-esünk ellen X esetén a partner gyakran *vakon* játszik. A 2NT relay megoldása lehetővé teszi, hogy a partner gyenge ÉS erős kézzel is jelezzen, anélkül hogy közvetlenül 3-as szintre menne.
 
 ### Michael's Cue bid + Unusual 2NT vs. Védekezés (Unusual vs Unusual)
 

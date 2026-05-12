@@ -2,10 +2,11 @@
 
 *(SAYC nyomán)*
 **Szerzők:** Jánoki Imre és Uhrin Ákos
-**Verzió:** r3.0
+**Verzió:** r3.1
 **Eredeti:** 2023.07.03. (r1.0)
 **Utolsó revízió (r1.8)** 2025.09.17.
 **Átszerkesztve, bővítve (r3.0):** 2026.05.12.
+**Konvenció-bővítések (r3.1):** 2026.05.12.
 
 > 💡 **Mi változott a r1.8 → r2.0 között?**
 Struktúrális változás a Google Docsban, ami alapjául szolgált a jelen markdownnak.
@@ -22,6 +23,13 @@ Struktúrális változás a Google Docsban, ami alapjául szolgált a jelen mark
 > - Bedolgozva: [LTC és Zar Points](#lapérték-finomítás--ltc-és-zar-points), [Cuebid kontrollok](#cuebid--első--és-másodkörös-kontrollok), [Gyakori licitálási hibák](#gyakori-licitálási-hibák--anti-pattern-szekció), [Példa licitsorozatok](#példa-licitsorozatok-minden-főbb-konvencióhoz).
 > - Pótolva a hiányzó pontozási sorok (kontrázott / rekontrázott bukás).
 > - A hivatkozott, de korábban üres szekciók kapnak vagy magyarázó szöveget, vagy explicit ábra-placeholdert.
+
+> 💡 **Mi változott a r3.0 → r3.1 között?**
+> - **Erős 2♣ feltételek pontosítása:** 22+ HCP balanced **vagy** 19+ HCP + 9+ playing trick (eloszlásos). A korábbi „17 HCP" küszöb javítva minden helyen (induló-táblázat, részletes szekció, Gyorskereső).
+> - Új: [Crawling (Creeping) Stayman](#crawling-creeping-stayman-konvenció) — gyenge kézzel 1NT-ből menekülés 4-4 nemes-fittel.
+> - Új: [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után) — 4+ adu + 10+ HCP take-out double után.
+> - Új: [Az ellenfél kontrázott — ez **is** közbeszólás](#ellenfél-kontrázott--ez-is-közbeszólás) — explicit struktúra (direct raise / jump raise / Jordan 2NT / XX) takeout double után.
+> - Bergen Raises vs. Mixed Raise distinkció kifejtve a Mixed Raise szekcióban.
 
 ## Tartalomjegyzék
 
@@ -52,11 +60,14 @@ Struktúrális változás a Google Docsban, ami alapjául szolgált a jelen mark
       - [Jacoby 2NT (segítőként, csak nemes nyitásra)](#jacoby-2nt-segítőként-csak-nemes-nyitásra)
       - [Bergen Raises](#bergen-raises)
     - [B) Első válasz – ha az ellenfél KÖZBESZÓLT](#b-első-válasz--ha-az-ellenfél-közbeszólt)
+      - [Az ellenfél kontrázott — ez **is** közbeszólás](#ellenfél-kontrázott--ez-is-közbeszólás)
       - [Negatív kontra – a Standard SAYC (B konvenció)](#negatív-kontra--a-standard-sayc-b-konvenció)
       - [Kevert emelés (Mixed Raise)](#kevert-emelés-mixed-raise)
+      - [Jordan 2NT (4+ fit + 10+ HCP take-out double után)](#jordan-2nt-4-fit--10-hcp-take-out-double-után)
   - [Válaszok az 1NT vagy 2NT indulásra](#válaszok-az-1nt-vagy-2nt-indulásra)
     - [A) Segítő válaszai 1NT indulásra (közbeszólás nélkül)](#a-segítő-válaszai-1nt-indulásra-közbeszólás-nélkül)
       - [Stayman, Smolen és Garbage Stayman konvenciók (1NT → 2♣)](#stayman-smolen-és-garbage-stayman-konvenciók-1nt--2)
+      - [Crawling (Creeping) Stayman konvenció](#crawling-creeping-stayman-konvenció)
       - [Puppet Stayman konvenció (1NT → 3♣ vagy 2NT → 3♣)](#puppet-stayman-konvenció-1nt--3-vagy-2nt--3)
       - [Jacoby transzfer I. és II. (1NT → 2♦ kőrre, 1NT → 2♥ pikkre)](#jacoby-transzfer-i-és-ii-1nt--2-kőrre-1nt--2-pikkre)
     - [B) Válaszok 1NT indulásra, ha az ellenfél közbeszólt](#b-válaszok-1nt-indulásra-ha-az-ellenfél-közbeszólt)
@@ -320,7 +331,7 @@ Mindig hívj 1-es színt, ha legalább 12 pontod van. Nyithatsz kevesebb pontbó
 | 1 valami → valami → 1NT (újrahívás) | 11–14 HCP. |
 | 1 valami → valami → 2NT (ugrás) | 18–19 HCP, balanced. |
 | Stop 2NT | 20–21 HCP, balanced. [Stayman](#stayman-smolen-és-garbage-stayman-konvenciók-1nt--2) + [transfer](#jacoby-transzfer-i-és-ii-1nt--2-kőrre-1nt--2-pikkre) érvényben. |
-| Stop 2♣ (!) | 19+ pontot ígér. A partnernek kötelező válaszolnia! Lásd: [Erős két treff indulás](#erős-2-treff-indulás). |
+| Stop 2♣ (!) | **22+ HCP balanced**, *vagy* **19+ HCP + 9+ playing trick** (eloszlásos kéz, „1 ütés hiányzik a gémhez"). A partnernek kötelező válaszolnia! Lásd: [Erős két treff indulás](#erős-2-treff-indulás). |
 | Stop 2♣ → válasz → 2NT | 22–23 HCP, balanced. Stayman + transfer érvényben. |
 | Stop 3NT | Pontosan 24–26 pont és egyenletes eloszlás. |
 | Gyenge 2-es (Stop 2♦, 2♥, 2♠) | Pontosan 6-lapos adu színnel. Sebezhetőségtől függ: **Kedvezőtlen** (mi bellben, ők mansban) = **6–10 pont**, **Kedvező** (mi mansban, ők bellben) = **5–11 pont**, agresszívebb. |
@@ -479,6 +490,41 @@ Marty Bergen rendszere a **pontosan 4 lapos** nemes-supportot (fittet) fejezi ki
 
 > ⚠️ Ha közbeszóltak, sok természetes licit jelentése megváltozik. Az [Inverted minor](#inverted-minor-csak-nem-nemes-nyitásra) és a [Jacoby 2NT](#jacoby-2nt-segítőként-csak-nemes-nyitásra) NEM játszik közbeszólás esetén!
 
+<a id="ellenfél-kontrázott--ez-is-közbeszólás"></a>
+#### Az ellenfél kontrázott — ez **is** közbeszólás
+
+**Fontos elv:** A takeout double **közbeszólásnak számít** (interference). Minden konvenció, ami közbeszólásra „lekapcsol", X-re is lekapcsol:
+
+| Konvenció | Uncontested | Takeout double után |
+| :---- | :---- | :---- |
+| Inverted Minor | ✅ aktív | ❌ NEM aktív |
+| Jacoby 2NT | ✅ aktív | ❌ NEM aktív (helyette: [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után)) |
+| Bergen Raises | ✅ aktív | ❌ NEM aktív (helyette: [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után) + módosított raise-struktúra) |
+| 2/1 Game Forcing | ✅ aktív | ⚠️ **NEM tisztán GF** — a 2-es szintű új szín 10+ HCP F-1, de nem automatikusan GF |
+| Semi-forcing 1NT | ✅ aktív | ⚠️ 1NT inkább 7–10 HCP, NF |
+| Stayman / Jacoby transfer (1NT után) | ✅ aktív | Lásd: [B) Válaszok 1NT-re, ha az ellenfél közbeszólt](#b-válaszok-1nt-indulásra-ha-az-ellenfél-közbeszólt) |
+
+**A licit-konstrukció ilyenkor (1♥/♠ – (X) – ?):**
+
+| Te licited | Erő | Jelentés |
+| :---- | :---- | :---- |
+| **PASSZ** | 0–5 | Nincs jó licit |
+| **2 ugyanaz a szín** (2♥) | 6–9 | 3+ adu, **konstruktív** (NEM preemptív, mint közbeszólás nélkül!) |
+| **3 ugyanaz a szín** (3♥) | 0–6 | 4+ adu, **preemptív** (defenzív) — *lényeg: 4+ lapos support, nem invitációs!* |
+| **4 ugyanaz a szín** (4♥) | 0–7 | 5+ adu, shape-es, lezáró |
+| **2NT** | **10+** | **Jordan 2NT** — 4+ adu, limit+, GF-irány. Lásd: [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után). |
+| **XX (rekontra)** | **10+** | **NINCS 4+ adu** — penalty-irány, 1 körig F. Általában *deny*-eli a 4 lapos nemes-fit-et (ha lenne, Jordan 2NT vagy splinter lenne) |
+| **Új szín 1-es szinten** (1♠) | 6+ | 4+ lap, NF |
+| **Új szín 2-es szinten** (2♣) | 10+ | 4+ lap, F-1 (de nem automatikus GF) |
+
+> 💡 **Memóriasegítő — a „double a duma":**
+> - **Direct raise = 6-9 HCP** (konstruktív, mint partner-tájékoztatás)
+> - **Jump raise = 0-6 HCP, 4+ adu** (preemptív, ellenfél megnehezítése)
+> - **2NT = Jordan, 10+ HCP, 4+ adu** (slam-irány vagy biztos gém)
+> - **XX = 10+ HCP, NINCS fit** (penalty / büntetés keresése)
+>
+> Vagyis a 4 lapos fit **AKÁR gyenge, AKÁR erős** kézzel rögtön kiderül — ami információs előnyt jelent a partnerünknek a kompetitív kontra-átmenetekben.
+
 <a id="negatív-kontra-a-standard-sayc-b-konvenció"></a>
 #### Negatív kontra – a Standard SAYC (B konvenció)
 
@@ -492,6 +538,10 @@ A negatív kontra 6+ pontot ígér, és kifejezetten a be nem mondott nemes szí
 
 #### Kevert emelés (Mixed Raise)
 
+> 💡 **Miért nem Bergen?** A [Bergen Raises](#bergen-raises) (3♣ = 7–9 + 4-es fit, 3♦ = 10–11 + 4-es fit) **csak akkor működik, ha az ellenfél nem szólt közbe**. Amint közbeszóltak, a 3♣ / 3♦ már *cuebid* értelmezést kaphat (ha az volt az ellenfél színe), vagy a licittér más okból lefoglalt. Ezért **contested** helyzetben a **Mixed Raise** veszi át a Bergen szerepét — egyszerűsített, ütésszint-orientált struktúrával.
+>
+> **Memorizálási szabály:** *Bergen = uncontested, Mixed Raise = contested overcall, Jordan 2NT = contested by takeout double.*
+
 Ha közbeszóltak az indulásra, a segítő kevert emeléssel válaszol.
 
 **Példa:** Észak 1♥ — Kelet 2♣ — Dél ?
@@ -503,6 +553,47 @@ Ha közbeszóltak az indulásra, a segítő kevert emeléssel válaszol.
 | Szín ismétlése 3-as szinten (3♥) | 6–9 pont, preempt. |
 | Szín ismétlése 4-es szinten (4♥) | 0–5 pont, minimum 5-ös szín. |
 | Ellenfél színének licitálása (3♣ cue bid) | 13+ pont, támogatás, forcing. |
+
+#### Jordan 2NT (4+ fit + 10+ HCP take-out double után)
+
+**Helyzet:** Partnered nemest nyitott (1♥ vagy 1♠), és **a jobb ellenfeled take-out kontrázott**.
+
+Eredeti SAYC-ben a 2NT itt 13+ HCP, balanced, nincs fit lett volna — de takeout double után ez a *közbeszólás minősége* miatt szinte sosem releváns (ha balanced 13+-od van, és nincs fit, általában rekontrázol). Ezért a 2NT-t **átfordítjuk** Jordan 2NT-re.
+
+| Te válaszod 1♥/♠ – (X) – ? után | Jelentés |
+| :---- | :---- |
+| **Passz** | 0–5 HCP, nincs jó licit |
+| **1NT** | 7–10 HCP, balanced, nincs adu-fit (NF) |
+| **2 ugyanaz a szín** (2♥) | 6–9 HCP, 3+ adu — *konstruktív* sima emelés |
+| **2NT (Jordan)** | **10+ HCP, 4+ adu, limit+** (GF irány) |
+| **3 ugyanaz a szín** (3♥) | 4+ adu, 0–6 HCP, **preemptív** (defenzív emelés) |
+| **4 ugyanaz a szín** (4♥) | 5+ adu, 0–7 HCP, shape-es, lezáró/preemptív |
+| **Új szín 1-es szinten** (1♠) | 6+ HCP, 4+ lap, NF (mint közbeszólás nélkül) |
+| **Új szín 2-es szinten** (2♣/2♦) | 10+ HCP, 4+ lap, F (a 2/1 GF nem feltétlenül érvényesül kontra alatt) |
+| **2♠ ugró új szín** (1♥ után) | Splinter (4+ kőr + ♠ rövidség, 10–13) |
+| **XX (rekontra)** | **10+ HCP, NINCS 4+ adu** — penalty-irány, forcing 1 körig |
+
+**Példa:**
+
+| Lap | Te kezed |
+| :---- | :---- |
+| ♠ Q 4 | 2 pikk |
+| ♥ K J 8 2 | 4 kőr |
+| ♦ Q J 7 6 | 4 káró |
+| ♣ K 8 5 | 3 treff |
+
+**HCP:** 11. Partner 1♥ nyitott, jobb ellenfél X (takeout).
+
+**Helyes licit:** 2NT (Jordan) — 11 HCP, 4 fit kőrben, limit+ raise. A partner most már GF üzemmódban van, és slam felé tovább vihet.
+
+> 💡 **Mire való a Jordan 2NT?** Egyszerre teszi nyilvánvalóvá a 4 lapos fit-et ÉS a limit+ erőt. Enélkül a 4 fitet 3♥ vagy 4♥ közvetlenül kellene mutatni — de azok preemptív stílusúak (gyenge). A 2NT az egyetlen „tiszta" konstruktív licit a 4 fittel.
+
+> ⚠️ **Eredeti 2NT (balanced 13+, nincs fit)?** Erre most a **rekontrával + utólagos NT-vel** kell eljutni:
+>
+> ```
+> 1♥ – (X) – XX – (Passz)
+>  ?  – (Passz) – 2NT  →  balanced 13+, nincs 4 fit
+> ```
 
 ---
 
@@ -555,6 +646,45 @@ Ha a segítőnek **Game Forcing** keze van (10+ pont) és **5-4 eloszlása** a n
 | 2NT | Nincs 5-ös nemes (csak egy vagy két 4-es), invitál 3NT-re. |
 | 3♥/3♠ | **Smolen** konvenció: 4 lap a licitált nemesben, 5 lap a másikban. Game Forcing. |
 | 3NT | Lezáró licit, nincs slem. |
+
+<a id="crawling-creeping-stayman-konvenció"></a>
+#### Crawling (Creeping) Stayman konvenció
+
+**Mikor használjuk?** Ha 0–7 HCP-d van, és a kezed 4-4 (vagy 5-4 / 4-3) a nemesekben + rövid treff, de a partner 1NT nyitására adott Garbage Stayman válaszodra (2♣) a partner **2♦-ot vagy 2♥-t** mondott. Most „felkúszunk" a 2-es szinten a legjobb fit reményében.
+
+**Crawling Stayman szekvencia:**
+
+| Licit | Jelentés |
+| :---- | :---- |
+| 1NT – 2♣ – **2♦** – **2♥** | 4-4 nemes, gyenge (0–7). Partnernek: passz 4 kőrrel, **2♠** 4 pikkel. (Ez a klasszikus Garbage logika, *kúszás nélkül*.) |
+| 1NT – 2♣ – **2♦** – **2♠** | 4 pikk + 5+ kőr, gyenge. Partner passzol 3-as pikkel, vagy **3♥**-re javít 2-es pikkel + 3-as kőrrel. |
+| 1NT – 2♣ – **2♥** – **2♠** | **Crawling**: 4 pikk + 4-es kőr **vagy** 5+ pikk + 3-as kőr, gyenge. Partner most már **TUDJA**, hogy van 4 köröd, ezért választhat: passz 4 pikkel (4-4 fit pikkben) vagy **3♥** 5+ pikk + 3-as kőrre vissza. |
+| 1NT – 2♣ – **2♠** – **PASSZ** | Garbage, 4 pikk, gyenge — nincs miért tovább kúszni. |
+
+> 💡 **A Crawling Stayman kulcsa:** a 2♠ a partner 2♥ rebidje *után* nem 5+ pikket ígér — hanem azt mondja: *„4 pikkem van, és tudom, hogy 4+ köröd van. Te döntesz a 4-4 fit között."*
+
+> ⚠️ **Konvenció-megegyezés szükséges!** A natural-Stayman játszók szerint 1NT – 2♣ – 2♥ – 2♠ az invitációs 5+ pikk lenne. A Crawling variánst **előre meg kell beszélni** partnerrel.
+
+**Mire jó valójában?** Olyan helyzetekben, ahol 4-3-3-3 vagy 4-3-4-2 mellett gyenge kézzel mégis a nemes-fit a legjobb játszható szerződés (egy 4-3 fit jellemzően jobb, mint 1NT 0–7 HCP-vel).
+
+**Példa:**
+
+| Lap | Te kezed |
+| :---- | :---- |
+| ♠ K J 8 6 | 4 pikk |
+| ♥ Q 7 5 2 | 4 kőr |
+| ♦ J 7 3 | 3 káró |
+| ♣ 6 4 | 2 treff |
+
+**HCP:** 7. Sebezhetőség mindegy.
+
+```
+Partner: 1NT
+Te:      2♣ (Garbage/Crawling Stayman, 0–7)
+Partner: 2♥ (4 kőr van neki)
+Te:      2♠ (Crawling — 4 pikk + 4 kőr, gyenge; te választasz)
+Partner: PASSZ (4-4 pikk fit van, ez jobb mint 3♥)
+```
 
 #### Puppet Stayman konvenció (1NT → 3♣ vagy 2NT → 3♣)
 
@@ -760,8 +890,19 @@ Ha az ellenfelek közbeszóltak a gyenge 2-esre adott takeout double-re, akkor a
 
 ## Erős 2 treff indulás
 
-- Feltételek: legalább 17 HCP, és összesen legalább 21 pont; a kéz nem balanced. Balanced kéznél **2NT** az indulás.
+**Feltételek (legalább az egyik teljesüljön):**
+
+- **22+ HCP**, balanced eloszlás (5-3-3-2 vagy lazább) — bár balanced kéznél 22–24 HCP-vel inkább 2♣ → 2NT a tisztább út, mint közvetlen 2NT (ami csak 20–21), VAGY
+- **19+ HCP** + erős eloszlás (5+ lapos szín és/vagy 4-5 színhossz) + **9+ playing tricks** („1 ütés hiányzik a gémhez").
 - A 2♦/2♥ válasz kivételével minden licit természetes és game forcing.
+
+> 💡 **Mit jelent „1 ütés hiányzik a gémhez"?** Egy 4-major gémhez 10 ütés kell. Ha a saját kezedben (a partner segítsége nélkül!) látsz **9 biztos vagy szinte biztos ütést**, akkor a partnertől már csak **1 ütés** kell — ezt a kezet pedig veszélyes 1-es szinten megnyitni, mert a partner *passzolhatja* a sima 1-es nyitást. A 2♣ erős nyitás **kötelező válaszra szólít fel**, így biztosan nem maradsz 1-es szinten.
+
+**Mi NEM erős 2♣ (gyakori tévedés):**
+
+- ♠ AKQ54 ♥ AQ32 ♦ KQ ♣ 84 — **20 HCP, balanced**, de balanced kéznél 2NT (20–21) a helyes! Ez **2NT (Stop)**.
+- ♠ AQ8543 ♥ AKQ ♦ Q72 ♣ 4 — **17 HCP, 6-os pikk, ~7 playing trick**. Ez **1♠** + reverse rebid (mert a kifelé 7 ütés *nem* 9). NEM 2♣.
+- ♠ AKQ7654 ♥ AKJ ♦ 7 ♣ Q5 — **18 HCP, 7-es pikk, ~9 playing trick**. **EZ 2♣!** (A kéz önmagában szinte gémet játszik.)
 
 ### Válaszok a 2♣ indulásra (2♣ → ?)
 
@@ -1792,7 +1933,7 @@ Az endplay-ek és squeeze-ek 90%-ban azon múlnak, hogy a felvevő pontosan isme
 | 20–21 HCP, balanced | **2NT (Stop)** | [Induló licitek](#induló-licitek--részletes-táblázat) |
 | 24–26 HCP, balanced | **3NT (Stop)** | [Induló licitek](#induló-licitek--részletes-táblázat) |
 | 22–23 HCP, balanced | **2♣** → válasz → **2NT** | [2♣ + rebid](#egyéb-megfontolások-az-erős-2-treff-után) |
-| 17+ HCP, 21+ összpont, nem balanced | **2♣ (Stop!)** | [Erős 2 treff](#erős-2-treff-indulás) |
+| 22+ HCP balanced, *vagy* 19+ HCP + 9+ playing trick (eloszlásos) | **2♣ (Stop!)** | [Erős 2 treff](#erős-2-treff-indulás) |
 | 12+ HCP + 5-ös nemes | **1♥** vagy **1♠** | [Általános irányelvek](#általános-irányelvek) |
 | 12+ HCP, nincs 5-ös nemes, 4+ káró | **1♦** | [Általános irányelvek](#általános-irányelvek) |
 | 12+ HCP, nincs 5-ös nemes, 3-3 nemnemes | **1♣** (convenient minor) | [Általános irányelvek](#általános-irányelvek) |
@@ -1832,6 +1973,7 @@ Az endplay-ek és squeeze-ek 90%-ban azon múlnak, hogy a felvevő pontosan isme
 | 0–7, nincs 5-ös nemes, nincs 6-os alsó | **PASSZ** | [A) Segítő válaszai](#a-segítő-válaszai-1nt-indulásra-közbeszólás-nélkül) |
 | 8+ HCP, pontosan 4-4 nemes | **2♣** (Stayman) | [Stayman](#stayman-smolen-és-garbage-stayman-konvenciók-1nt--2) |
 | 0–7 HCP, 4-4-4-1 vagy hasonló rövid treffel | **2♣** (Garbage Stayman) | [Garbage Stayman](#stayman-smolen-és-garbage-stayman-konvenciók-1nt--2) |
+| 0–7 HCP, 4-4 nemes + rövid treff, partner 2♥/2♠-t mondott | **Crawling**: új nemes a 2-es szinten | [Crawling Stayman](#crawling-creeping-stayman-konvenció) |
 | 10+ HCP, 5-4 nemes | **2♣** → ha 2♦, akkor **3♥/♠** (Smolen) | [Smolen](#stayman-smolen-és-garbage-stayman-konvenciók-1nt--2) |
 | 5+ kőr | **2♦** (Jacoby transfer) | [Jacoby transzfer](#jacoby-transzfer-i-és-ii-1nt--2-kőrre-1nt--2-pikkre) |
 | 5+ pikk | **2♥** (Jacoby transfer) | [Jacoby transzfer](#jacoby-transzfer-i-és-ii-1nt--2-kőrre-1nt--2-pikkre) |
@@ -1840,6 +1982,19 @@ Az endplay-ek és squeeze-ek 90%-ban azon múlnak, hogy a felvevő pontosan isme
 | 10+ HCP, 3-as nemes garantálva | **3♣** (Puppet Stayman) | [Puppet Stayman](#puppet-stayman-konvenció-1nt--3-vagy-2nt--3) |
 | 16–17 HCP, balanced, slem-meghívás | **4NT** (kvantitatív, NEM ászkérdés!) | [A) Segítő válaszai](#a-segítő-válaszai-1nt-indulásra-közbeszólás-nélkül) |
 | Ászkérdés (slem-kontextus) | **4♣** (Gerber!) | [Gerber](#gerber-szanra-adott-ász--és-királykérdés) |
+
+## Segítőként – Partner 1♥/1♠ nyitására, ellenfél X-elt (takeout double)
+
+| Lapom | Licit | Hivatkozás |
+| :---- | :---- | :---- |
+| 0–5 HCP, nincs jó licit | **PASSZ** | — |
+| 6–9 HCP, 3+ adu | **2 ugyanaz a szín** (konstruktív) | [Ellenfél kontrázott — közbeszólás](#ellenfél-kontrázott--ez-is-közbeszólás) |
+| **10+ HCP, 4+ adu** | **2NT (Jordan)** | [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után) |
+| 0–6 HCP, 4+ adu, preempt | **3 ugyanaz a szín** | [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után) |
+| 0–7 HCP, 5+ adu, shape-es | **4 ugyanaz a szín** | [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után) |
+| 10+ HCP, **nincs** 4+ adu | **XX (rekontra)** | [Rekontra](#rekontra-erős) |
+| Splinter értékelhető (4+ adu + egyke) | **Dupla ugrás új színben** | [Splinter](#splinter-bids) |
+| 7–10 HCP, balanced, nincs fit | **1NT** | [Jordan 2NT](#jordan-2nt-4-fit--10-hcp-take-out-double-után) |
 
 ## Ellenfél közbeszólt – mit jelent a kontrám?
 
